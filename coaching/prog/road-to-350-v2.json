@@ -1,0 +1,2759 @@
+{
+ "program": "Road to 350 kg",
+ "sessions": [
+  {
+   "date": "2026-11-26",
+   "name": "S1 · Calibration — Squat calibration",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat",
+     "sets": 4,
+     "reps": 3,
+     "kg": 70,
+     "rpe": 8,
+     "rest": 180,
+     "cue": "Échauffement 10-15 min + montée progressive. Monte par paliers de 5-10 kg jusqu’à une série de 3 à RPE 8 (≈ 70-75 kg). Note bien le RPE : il sert à caler tout le programme."
+    },
+    {
+     "name": "Squat",
+     "sets": 3,
+     "reps": 5,
+     "kg": 62.5,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Séries de volume à ~80 % de ta série de 3. Profondeur compétition : pli de hanche sous le genou."
+    },
+    {
+     "name": "Soulevé de terre roumain",
+     "sets": 3,
+     "reps": 8,
+     "kg": 60,
+     "rpe": 7,
+     "rest": 120,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 10."
+    },
+    {
+     "name": "Fentes bulgares",
+     "sets": 3,
+     "reps": 8,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Haltères. 8 par jambe. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Leg curl",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    },
+    {
+     "name": "Gainage abdominal",
+     "sets": 3,
+     "reps": 45,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Gainage ventral, bassin neutre.",
+     "unit": "sec"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "name": "S1 · Calibration — Tirage calibration",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 5,
+     "reps": 1,
+     "kg": 2.5,
+     "rpe": 8,
+     "rest": 180,
+     "cue": "Échauffement 10-15 min + montée progressive. Singles : PDC, puis +2,5, +5… jusqu’à un single à RPE 8 (propre, sans kipping excessif). Charge = lest ajouté."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 4,
+     "reps": 3,
+     "kg": 30,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Monte jusqu’à une série de 3 à RPE 8 (≈ +27,5 à +35). Départ bras tendus, menton au-dessus de la barre. Charge = lest ajouté."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 3,
+     "reps": 6,
+     "kg": 15,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 4,
+     "reps": 5,
+     "kg": 25,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Volume. Épaules sous les coudes en bas. Charge = lest ajouté."
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 3,
+     "reps": 10,
+     "kg": 28,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 12."
+    }
+   ]
+  },
+  {
+   "date": "2026-11-28",
+   "name": "S1 · Calibration — Squat technique & haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat pause 2 s",
+     "sets": 3,
+     "reps": 3,
+     "kg": 55,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Pause de 2 s en bas, gainé. Technique, pas d’effort maximal."
+    },
+    {
+     "name": "Dips pause 1 s",
+     "sets": 3,
+     "reps": 5,
+     "kg": 10,
+     "rpe": 7,
+     "rest": 120,
+     "cue": "Pause d’1 s en bas. Charge = lest ajouté."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12. Charge à compléter."
+    },
+    {
+     "name": "Développé incliné haltères",
+     "sets": 3,
+     "reps": 10,
+     "kg": 20,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12."
+    },
+    {
+     "name": "Face pull",
+     "sets": 3,
+     "reps": 15,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Santé des épaules. Charge à compléter."
+    },
+    {
+     "name": "Curl marteau",
+     "sets": 3,
+     "reps": 12,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15."
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "name": "S2 · Accumulation — Tirage force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 6,
+     "reps": 1,
+     "kg": 1.25,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Échauffement 10-15 min + montée progressive. Singles propres et explosifs, transition rapide. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 5,
+     "reps": 5,
+     "kg": 18.75,
+     "rpe": 7,
+     "rest": 210,
+     "cue": "Charge = lest ajouté. Pas d’échec. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 3,
+     "reps": 10,
+     "kg": 28,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 12."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12. Charge à compléter."
+    },
+    {
+     "name": "Curl incliné",
+     "sets": 3,
+     "reps": 10,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "name": "S2 · Accumulation — Dips force & squat volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Dips lestés",
+     "sets": 5,
+     "reps": 5,
+     "kg": 23.75,
+     "rpe": 7,
+     "rest": 210,
+     "cue": "Échauffement 10-15 min + montée progressive. Charge = lest ajouté. Épaules sous les coudes en bas. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Squat",
+     "sets": 4,
+     "reps": 6,
+     "kg": 57.5,
+     "rpe": 6.5,
+     "rest": 150,
+     "cue": "Volume, vitesse constante à la remontée. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Extension triceps",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15. Charge à compléter."
+    },
+    {
+     "name": "Élévations latérales",
+     "sets": 3,
+     "reps": 15,
+     "kg": 8,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "name": "S2 · Accumulation — Squat force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat",
+     "sets": 5,
+     "reps": 5,
+     "kg": 62.5,
+     "rpe": 7,
+     "rest": 180,
+     "cue": "Échauffement 10-15 min + montée progressive. Profondeur compétition. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Soulevé de terre roumain",
+     "sets": 3,
+     "reps": 8,
+     "kg": 60,
+     "rpe": 7.5,
+     "rest": 120,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 10."
+    },
+    {
+     "name": "Fentes bulgares",
+     "sets": 3,
+     "reps": 8,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "8 par jambe. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Leg curl",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    },
+    {
+     "name": "Gainage abdominal",
+     "sets": 3,
+     "reps": 45,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Ajoute 5 s par semaine.",
+     "unit": "sec"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "name": "S2 · Accumulation — Streetlifting volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up technique",
+     "sets": 6,
+     "reps": 2,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Au poids du corps. Travaille la transition : hanches hautes, poitrine qui passe vite au-dessus de la barre."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 4,
+     "reps": 6,
+     "kg": 10.0,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 4,
+     "reps": 6,
+     "kg": 15.0,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Rowing poulie basse",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15. Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-05",
+   "name": "S2 · Accumulation — Squat technique & haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat pause 2 s",
+     "sets": 3,
+     "reps": 3,
+     "kg": 50.0,
+     "rpe": 6.5,
+     "rest": 150,
+     "cue": "Pause de 2 s en bas (~60 % du max). Technique, pas d’effort maximal."
+    },
+    {
+     "name": "Dips pause 1 s",
+     "sets": 3,
+     "reps": 5,
+     "kg": 12.5,
+     "rpe": 7,
+     "rest": 120,
+     "cue": "Pause d’1 s en bas. Charge = lest ajouté."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    },
+    {
+     "name": "Développé incliné haltères",
+     "sets": 3,
+     "reps": 10,
+     "kg": 20,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12."
+    },
+    {
+     "name": "Face pull",
+     "sets": 3,
+     "reps": 15,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Santé des épaules. Charge à compléter."
+    },
+    {
+     "name": "Curl marteau",
+     "sets": 3,
+     "reps": 12,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-07",
+   "name": "S3 · Accumulation — Tirage force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 6,
+     "reps": 1,
+     "kg": 2.5,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Échauffement 10-15 min + montée progressive. Singles propres et explosifs, transition rapide. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 5,
+     "reps": 4,
+     "kg": 21.25,
+     "rpe": 7.5,
+     "rest": 210,
+     "cue": "Charge = lest ajouté. Pas d’échec. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 3,
+     "reps": 10,
+     "kg": 28,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 12."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12. Charge à compléter."
+    },
+    {
+     "name": "Curl incliné",
+     "sets": 3,
+     "reps": 10,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-08",
+   "name": "S3 · Accumulation — Dips force & squat volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Dips lestés",
+     "sets": 5,
+     "reps": 4,
+     "kg": 27.5,
+     "rpe": 7.5,
+     "rest": 210,
+     "cue": "Échauffement 10-15 min + montée progressive. Charge = lest ajouté. Épaules sous les coudes en bas. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Squat",
+     "sets": 4,
+     "reps": 6,
+     "kg": 60.0,
+     "rpe": 7.0,
+     "rest": 150,
+     "cue": "Volume, vitesse constante à la remontée. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Extension triceps",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15. Charge à compléter."
+    },
+    {
+     "name": "Élévations latérales",
+     "sets": 3,
+     "reps": 15,
+     "kg": 8,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-10",
+   "name": "S3 · Accumulation — Squat force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat",
+     "sets": 5,
+     "reps": 5,
+     "kg": 65.0,
+     "rpe": 7.5,
+     "rest": 180,
+     "cue": "Échauffement 10-15 min + montée progressive. Profondeur compétition. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Soulevé de terre roumain",
+     "sets": 3,
+     "reps": 8,
+     "kg": 62.5,
+     "rpe": 7.5,
+     "rest": 120,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 10."
+    },
+    {
+     "name": "Fentes bulgares",
+     "sets": 3,
+     "reps": 8,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "8 par jambe. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Leg curl",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    },
+    {
+     "name": "Gainage abdominal",
+     "sets": 3,
+     "reps": 45,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Ajoute 5 s par semaine.",
+     "unit": "sec"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-11",
+   "name": "S3 · Accumulation — Streetlifting volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up technique",
+     "sets": 6,
+     "reps": 2,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Au poids du corps. Travaille la transition : hanches hautes, poitrine qui passe vite au-dessus de la barre."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 4,
+     "reps": 6,
+     "kg": 12.5,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 4,
+     "reps": 6,
+     "kg": 17.5,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Rowing poulie basse",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15. Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-12",
+   "name": "S3 · Accumulation — Squat technique & haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat pause 2 s",
+     "sets": 3,
+     "reps": 3,
+     "kg": 52.5,
+     "rpe": 6.5,
+     "rest": 150,
+     "cue": "Pause de 2 s en bas (~62.5 % du max). Technique, pas d’effort maximal."
+    },
+    {
+     "name": "Dips pause 1 s",
+     "sets": 3,
+     "reps": 5,
+     "kg": 15.0,
+     "rpe": 7,
+     "rest": 120,
+     "cue": "Pause d’1 s en bas. Charge = lest ajouté."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    },
+    {
+     "name": "Développé incliné haltères",
+     "sets": 3,
+     "reps": 10,
+     "kg": 20,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12."
+    },
+    {
+     "name": "Face pull",
+     "sets": 3,
+     "reps": 15,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Santé des épaules. Charge à compléter."
+    },
+    {
+     "name": "Curl marteau",
+     "sets": 3,
+     "reps": 12,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-14",
+   "name": "S4 · Accumulation — Tirage force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 6,
+     "reps": 1,
+     "kg": 3.75,
+     "rpe": 8,
+     "rest": 150,
+     "cue": "Échauffement 10-15 min + montée progressive. Singles propres et explosifs, transition rapide. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 5,
+     "reps": 4,
+     "kg": 25.0,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Charge = lest ajouté. Pas d’échec. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 3,
+     "reps": 10,
+     "kg": 28,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 12."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12. Charge à compléter."
+    },
+    {
+     "name": "Curl incliné",
+     "sets": 3,
+     "reps": 10,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-15",
+   "name": "S4 · Accumulation — Dips force & squat volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Dips lestés",
+     "sets": 5,
+     "reps": 4,
+     "kg": 30.0,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Échauffement 10-15 min + montée progressive. Charge = lest ajouté. Épaules sous les coudes en bas. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Squat",
+     "sets": 4,
+     "reps": 6,
+     "kg": 62.5,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume, vitesse constante à la remontée. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Extension triceps",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15. Charge à compléter."
+    },
+    {
+     "name": "Élévations latérales",
+     "sets": 3,
+     "reps": 15,
+     "kg": 8,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-17",
+   "name": "S4 · Accumulation — Squat force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat",
+     "sets": 5,
+     "reps": 4,
+     "kg": 65.0,
+     "rpe": 8,
+     "rest": 180,
+     "cue": "Échauffement 10-15 min + montée progressive. Profondeur compétition. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Soulevé de terre roumain",
+     "sets": 3,
+     "reps": 8,
+     "kg": 65,
+     "rpe": 7.5,
+     "rest": 120,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 10."
+    },
+    {
+     "name": "Fentes bulgares",
+     "sets": 3,
+     "reps": 8,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "8 par jambe. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Leg curl",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    },
+    {
+     "name": "Gainage abdominal",
+     "sets": 3,
+     "reps": 45,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Ajoute 5 s par semaine.",
+     "unit": "sec"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-18",
+   "name": "S4 · Accumulation — Streetlifting volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up technique",
+     "sets": 6,
+     "reps": 2,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Au poids du corps. Travaille la transition : hanches hautes, poitrine qui passe vite au-dessus de la barre."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 4,
+     "reps": 6,
+     "kg": 16.25,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 4,
+     "reps": 6,
+     "kg": 21.25,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Rowing poulie basse",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15. Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-19",
+   "name": "S4 · Accumulation — Squat technique & haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat pause 2 s",
+     "sets": 3,
+     "reps": 3,
+     "kg": 52.5,
+     "rpe": 6.5,
+     "rest": 150,
+     "cue": "Pause de 2 s en bas (~65 % du max). Technique, pas d’effort maximal."
+    },
+    {
+     "name": "Dips pause 1 s",
+     "sets": 3,
+     "reps": 5,
+     "kg": 17.5,
+     "rpe": 7,
+     "rest": 120,
+     "cue": "Pause d’1 s en bas. Charge = lest ajouté."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    },
+    {
+     "name": "Développé incliné haltères",
+     "sets": 3,
+     "reps": 10,
+     "kg": 20,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12."
+    },
+    {
+     "name": "Face pull",
+     "sets": 3,
+     "reps": 15,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Santé des épaules. Charge à compléter."
+    },
+    {
+     "name": "Curl marteau",
+     "sets": 3,
+     "reps": 12,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-21",
+   "name": "S5 · Décharge & recalibrage — Tirage recalibrage",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 4,
+     "reps": 1,
+     "kg": 5.0,
+     "rpe": 8,
+     "rest": 180,
+     "cue": "Échauffement 10-15 min + montée progressive. Monte jusqu’à un single à RPE 8 (pas plus). Je recalcule la suite du programme à partir de ce chiffre. Charge = lest ajouté."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 4,
+     "reps": 1,
+     "kg": 33.75,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Monte jusqu’à un single à RPE 8. Charge = lest ajouté."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 2,
+     "reps": 5,
+     "kg": 10.0,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Volume léger. Charge = lest ajouté."
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 2,
+     "reps": 10,
+     "kg": 28,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Léger."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-22",
+   "name": "S5 · Décharge & recalibrage — Dips & squat recalibrage",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Dips lestés",
+     "sets": 4,
+     "reps": 1,
+     "kg": 40.0,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Échauffement 10-15 min + montée progressive. Monte jusqu’à un single à RPE 8. Charge = lest ajouté."
+    },
+    {
+     "name": "Squat",
+     "sets": 4,
+     "reps": 1,
+     "kg": 75.0,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Monte jusqu’à un single à RPE 8, profondeur compétition."
+    },
+    {
+     "name": "Squat",
+     "sets": 2,
+     "reps": 5,
+     "kg": 57.5,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Volume léger."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 2,
+     "reps": 5,
+     "kg": 15.0,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Volume léger. Charge = lest ajouté."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-26",
+   "name": "S5 · Décharge & recalibrage — Full body léger",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat pause 2 s",
+     "sets": 2,
+     "reps": 3,
+     "kg": 50.0,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Technique."
+    },
+    {
+     "name": "Muscle-up technique",
+     "sets": 4,
+     "reps": 2,
+     "kg": 0,
+     "rpe": 6,
+     "rest": 90,
+     "cue": "Au poids du corps, explosif."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 2,
+     "reps": 6,
+     "kg": 3.75,
+     "rpe": 6,
+     "rest": 120,
+     "cue": "Léger. Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 2,
+     "reps": 6,
+     "kg": 8.75,
+     "rpe": 6,
+     "rest": 120,
+     "cue": "Léger. Charge = lest ajouté."
+    },
+    {
+     "name": "Face pull",
+     "sets": 2,
+     "reps": 15,
+     "kg": 0,
+     "rpe": 6,
+     "rest": 60,
+     "cue": "Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-28",
+   "name": "S6 · Intensification — Tirage force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 5,
+     "reps": 1,
+     "kg": 3.75,
+     "rpe": 8,
+     "rest": 180,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (93 % du max), puis 4 × 1 à 90 %. Charge = lest ajouté. Si le single lourd dépasse RPE 8,5, fais les singles suivants 1,25 kg plus léger.",
+     "plan": [
+      [
+       3.75,
+       1
+      ],
+      [
+       1.25,
+       1
+      ],
+      [
+       1.25,
+       1
+      ],
+      [
+       1.25,
+       1
+      ],
+      [
+       1.25,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 5,
+     "reps": 1,
+     "kg": 33.75,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (87.5 % du max), puis 4 × 3 à 82.5 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
+     "plan": [
+      [
+       33.75,
+       1
+      ],
+      [
+       27.5,
+       3
+      ],
+      [
+       27.5,
+       3
+      ],
+      [
+       27.5,
+       3
+      ],
+      [
+       27.5,
+       3
+      ]
+     ]
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 3,
+     "reps": 8,
+     "kg": 30,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 10."
+    },
+    {
+     "name": "Curl incliné",
+     "sets": 3,
+     "reps": 8,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 10."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-29",
+   "name": "S6 · Intensification — Dips force & squat volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Dips lestés",
+     "sets": 5,
+     "reps": 1,
+     "kg": 42.5,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (87.5 % du max), puis 4 × 3 à 82.5 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
+     "plan": [
+      [
+       42.5,
+       1
+      ],
+      [
+       36.25,
+       3
+      ],
+      [
+       36.25,
+       3
+      ],
+      [
+       36.25,
+       3
+      ],
+      [
+       36.25,
+       3
+      ]
+     ]
+    },
+    {
+     "name": "Squat",
+     "sets": 4,
+     "reps": 4,
+     "kg": 70.0,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Extension triceps",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12. Charge à compléter."
+    },
+    {
+     "name": "Élévations latérales",
+     "sets": 3,
+     "reps": 15,
+     "kg": 8,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-31",
+   "name": "S6 · Intensification — Squat force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat",
+     "sets": 5,
+     "reps": 1,
+     "kg": 80.0,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (87.5 % du max), puis 4 × 3 à 82.5 %. Profondeur compétition. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
+     "plan": [
+      [
+       80.0,
+       1
+      ],
+      [
+       77.5,
+       3
+      ],
+      [
+       77.5,
+       3
+      ],
+      [
+       77.5,
+       3
+      ],
+      [
+       77.5,
+       3
+      ]
+     ]
+    },
+    {
+     "name": "Soulevé de terre roumain",
+     "sets": 3,
+     "reps": 6,
+     "kg": 67.5,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 6 → 8."
+    },
+    {
+     "name": "Fentes bulgares",
+     "sets": 2,
+     "reps": 8,
+     "kg": 14,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "8 par jambe. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Gainage abdominal",
+     "sets": 3,
+     "reps": 50,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Gainage ventral.",
+     "unit": "sec"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-01",
+   "name": "S6 · Intensification — Streetlifting volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up technique",
+     "sets": 5,
+     "reps": 1,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Au poids du corps, explosif : vise la vitesse maximale."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 4,
+     "reps": 4,
+     "kg": 18.75,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 4,
+     "reps": 4,
+     "kg": 26.25,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Rowing poulie basse",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-02",
+   "name": "S6 · Intensification — Squat technique & haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat pause 2 s",
+     "sets": 3,
+     "reps": 2,
+     "kg": 65.0,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Pause de 2 s en bas."
+    },
+    {
+     "name": "Dips pause 1 s",
+     "sets": 3,
+     "reps": 4,
+     "kg": 22.5,
+     "rpe": 7,
+     "rest": 120,
+     "cue": "Charge = lest ajouté."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    },
+    {
+     "name": "Face pull",
+     "sets": 3,
+     "reps": 15,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Charge à compléter."
+    },
+    {
+     "name": "Curl marteau",
+     "sets": 2,
+     "reps": 12,
+     "kg": 14,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-04",
+   "name": "S7 · Intensification — Tirage force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 5,
+     "reps": 1,
+     "kg": 6.25,
+     "rpe": 8,
+     "rest": 180,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (95 % du max), puis 4 × 1 à 91 %. Charge = lest ajouté. Si le single lourd dépasse RPE 8,5, fais les singles suivants 1,25 kg plus léger.",
+     "plan": [
+      [
+       6.25,
+       1
+      ],
+      [
+       2.5,
+       1
+      ],
+      [
+       2.5,
+       1
+      ],
+      [
+       2.5,
+       1
+      ],
+      [
+       2.5,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 5,
+     "reps": 1,
+     "kg": 37.5,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (90 % du max), puis 4 × 3 à 85 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
+     "plan": [
+      [
+       37.5,
+       1
+      ],
+      [
+       31.25,
+       3
+      ],
+      [
+       31.25,
+       3
+      ],
+      [
+       31.25,
+       3
+      ],
+      [
+       31.25,
+       3
+      ]
+     ]
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 3,
+     "reps": 8,
+     "kg": 30,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 10."
+    },
+    {
+     "name": "Curl incliné",
+     "sets": 3,
+     "reps": 8,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 10."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-05",
+   "name": "S7 · Intensification — Dips force & squat volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Dips lestés",
+     "sets": 5,
+     "reps": 1,
+     "kg": 46.25,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (90 % du max), puis 4 × 3 à 85 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
+     "plan": [
+      [
+       46.25,
+       1
+      ],
+      [
+       38.75,
+       3
+      ],
+      [
+       38.75,
+       3
+      ],
+      [
+       38.75,
+       3
+      ],
+      [
+       38.75,
+       3
+      ]
+     ]
+    },
+    {
+     "name": "Squat",
+     "sets": 4,
+     "reps": 4,
+     "kg": 72.5,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Extension triceps",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12. Charge à compléter."
+    },
+    {
+     "name": "Élévations latérales",
+     "sets": 3,
+     "reps": 15,
+     "kg": 8,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-07",
+   "name": "S7 · Intensification — Squat force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat",
+     "sets": 5,
+     "reps": 1,
+     "kg": 82.5,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (90 % du max), puis 4 × 3 à 85 %. Profondeur compétition. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
+     "plan": [
+      [
+       82.5,
+       1
+      ],
+      [
+       77.5,
+       3
+      ],
+      [
+       77.5,
+       3
+      ],
+      [
+       77.5,
+       3
+      ],
+      [
+       77.5,
+       3
+      ]
+     ]
+    },
+    {
+     "name": "Soulevé de terre roumain",
+     "sets": 3,
+     "reps": 6,
+     "kg": 70,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 6 → 8."
+    },
+    {
+     "name": "Fentes bulgares",
+     "sets": 2,
+     "reps": 8,
+     "kg": 14,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "8 par jambe. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Gainage abdominal",
+     "sets": 3,
+     "reps": 50,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Gainage ventral.",
+     "unit": "sec"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-08",
+   "name": "S7 · Intensification — Streetlifting volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up technique",
+     "sets": 5,
+     "reps": 1,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Au poids du corps, explosif : vise la vitesse maximale."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 4,
+     "reps": 4,
+     "kg": 21.25,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 4,
+     "reps": 4,
+     "kg": 30.0,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Rowing poulie basse",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-09",
+   "name": "S7 · Intensification — Squat technique & haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat pause 2 s",
+     "sets": 3,
+     "reps": 2,
+     "kg": 67.5,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Pause de 2 s en bas."
+    },
+    {
+     "name": "Dips pause 1 s",
+     "sets": 3,
+     "reps": 4,
+     "kg": 25.0,
+     "rpe": 7,
+     "rest": 120,
+     "cue": "Charge = lest ajouté."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    },
+    {
+     "name": "Face pull",
+     "sets": 3,
+     "reps": 15,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Charge à compléter."
+    },
+    {
+     "name": "Curl marteau",
+     "sets": 2,
+     "reps": 12,
+     "kg": 14,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-11",
+   "name": "S8 · Intensification — Tirage force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 5,
+     "reps": 1,
+     "kg": 7.5,
+     "rpe": 8,
+     "rest": 180,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (97 % du max), puis 4 × 1 à 92 %. Charge = lest ajouté. Si le single lourd dépasse RPE 8,5, fais les singles suivants 1,25 kg plus léger.",
+     "plan": [
+      [
+       7.5,
+       1
+      ],
+      [
+       3.75,
+       1
+      ],
+      [
+       3.75,
+       1
+      ],
+      [
+       3.75,
+       1
+      ],
+      [
+       3.75,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 5,
+     "reps": 1,
+     "kg": 40.0,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (92.5 % du max), puis 4 × 3 à 87.5 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
+     "plan": [
+      [
+       40.0,
+       1
+      ],
+      [
+       33.75,
+       3
+      ],
+      [
+       33.75,
+       3
+      ],
+      [
+       33.75,
+       3
+      ],
+      [
+       33.75,
+       3
+      ]
+     ]
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 3,
+     "reps": 8,
+     "kg": 30,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 10."
+    },
+    {
+     "name": "Curl incliné",
+     "sets": 3,
+     "reps": 8,
+     "kg": 12,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 8 → 10."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-12",
+   "name": "S8 · Intensification — Dips force & squat volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Dips lestés",
+     "sets": 5,
+     "reps": 1,
+     "kg": 48.75,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (92.5 % du max), puis 4 × 3 à 87.5 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
+     "plan": [
+      [
+       48.75,
+       1
+      ],
+      [
+       42.5,
+       3
+      ],
+      [
+       42.5,
+       3
+      ],
+      [
+       42.5,
+       3
+      ],
+      [
+       42.5,
+       3
+      ]
+     ]
+    },
+    {
+     "name": "Squat",
+     "sets": 4,
+     "reps": 4,
+     "kg": 75.0,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    },
+    {
+     "name": "Extension triceps",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12. Charge à compléter."
+    },
+    {
+     "name": "Élévations latérales",
+     "sets": 3,
+     "reps": 15,
+     "kg": 8,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-14",
+   "name": "S8 · Intensification — Squat force",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat",
+     "sets": 5,
+     "reps": 1,
+     "kg": 85.0,
+     "rpe": 8,
+     "rest": 210,
+     "cue": "Série lourde : 1 × 1 à RPE 8 (92.5 % du max), puis 4 × 3 à 87.5 %. Profondeur compétition. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
+     "plan": [
+      [
+       85.0,
+       1
+      ],
+      [
+       80.0,
+       3
+      ],
+      [
+       80.0,
+       3
+      ],
+      [
+       80.0,
+       3
+      ],
+      [
+       80.0,
+       3
+      ]
+     ]
+    },
+    {
+     "name": "Soulevé de terre roumain",
+     "sets": 3,
+     "reps": 6,
+     "kg": 72.5,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 6 → 8."
+    },
+    {
+     "name": "Fentes bulgares",
+     "sets": 2,
+     "reps": 8,
+     "kg": 14,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "8 par jambe. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Gainage abdominal",
+     "sets": 3,
+     "reps": 50,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Gainage ventral.",
+     "unit": "sec"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-15",
+   "name": "S8 · Intensification — Streetlifting volume",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up technique",
+     "sets": 5,
+     "reps": 1,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Au poids du corps, explosif : vise la vitesse maximale."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 4,
+     "reps": 4,
+     "kg": 25.0,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 4,
+     "reps": 4,
+     "kg": 32.5,
+     "rpe": 7.5,
+     "rest": 150,
+     "cue": "Volume. Charge = lest ajouté."
+    },
+    {
+     "name": "Rowing poulie basse",
+     "sets": 3,
+     "reps": 12,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 75,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-16",
+   "name": "S8 · Intensification — Squat technique & haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat pause 2 s",
+     "sets": 3,
+     "reps": 2,
+     "kg": 70.0,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Pause de 2 s en bas."
+    },
+    {
+     "name": "Dips pause 1 s",
+     "sets": 3,
+     "reps": 4,
+     "kg": 27.5,
+     "rpe": 7,
+     "rest": 120,
+     "cue": "Charge = lest ajouté."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 90,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
+    },
+    {
+     "name": "Face pull",
+     "sets": 3,
+     "reps": 15,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Charge à compléter."
+    },
+    {
+     "name": "Curl marteau",
+     "sets": 2,
+     "reps": 12,
+     "kg": 14,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-18",
+   "name": "S9 · Réalisation — Tirage lourd",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 4,
+     "reps": 1,
+     "kg": 10.0,
+     "rpe": 8.5,
+     "rest": 240,
+     "cue": "Série lourde : 1 × 1 à RPE 8.5 (97 % du max), puis 3 × 1 à 92 %. Charge = lest ajouté. Conditions de compétition : départ bras tendus, pas de mouvement parasite.",
+     "plan": [
+      [
+       10.0,
+       1
+      ],
+      [
+       5.0,
+       1
+      ],
+      [
+       5.0,
+       1
+      ],
+      [
+       5.0,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 4,
+     "reps": 1,
+     "kg": 43.75,
+     "rpe": 8.5,
+     "rest": 240,
+     "cue": "Série lourde : 1 × 1 à RPE 8.5 (92.5 % du max), puis 3 × 2 à 87.5 %. Charge = lest ajouté. Départ bras tendus immobile, menton nettement au-dessus de la barre.",
+     "plan": [
+      [
+       43.75,
+       1
+      ],
+      [
+       37.5,
+       2
+      ],
+      [
+       37.5,
+       2
+      ],
+      [
+       37.5,
+       2
+      ]
+     ]
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 2,
+     "reps": 8,
+     "kg": 30,
+     "rpe": 7.5,
+     "rest": 90,
+     "cue": "Entretien."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-19",
+   "name": "S9 · Réalisation — Dips lourd & squat",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Dips lestés",
+     "sets": 4,
+     "reps": 1,
+     "kg": 52.5,
+     "rpe": 8.5,
+     "rest": 240,
+     "cue": "Série lourde : 1 × 1 à RPE 8.5 (92.5 % du max), puis 3 × 2 à 87.5 %. Charge = lest ajouté. Descente sous la ligne des coudes, verrouillage complet en haut.",
+     "plan": [
+      [
+       52.5,
+       1
+      ],
+      [
+       46.25,
+       2
+      ],
+      [
+       46.25,
+       2
+      ],
+      [
+       46.25,
+       2
+      ]
+     ]
+    },
+    {
+     "name": "Squat",
+     "sets": 3,
+     "reps": 3,
+     "kg": 77.5,
+     "rpe": 7,
+     "rest": 180,
+     "cue": "Volume réduit."
+    },
+    {
+     "name": "Extension triceps",
+     "sets": 2,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 7.5,
+     "rest": 75,
+     "cue": "Entretien. Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-21",
+   "name": "S9 · Réalisation — Squat lourd",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat",
+     "sets": 4,
+     "reps": 1,
+     "kg": 92.5,
+     "rpe": 8.5,
+     "rest": 240,
+     "cue": "Série lourde : 1 × 1 à RPE 8.5 (92.5 % du max), puis 3 × 2 à 87.5 %. Commandes de compétition (attendre le signal en bas de la descente si tu es jugé ainsi).",
+     "plan": [
+      [
+       92.5,
+       1
+      ],
+      [
+       87.5,
+       2
+      ],
+      [
+       87.5,
+       2
+      ],
+      [
+       87.5,
+       2
+      ]
+     ]
+    },
+    {
+     "name": "Soulevé de terre roumain",
+     "sets": 2,
+     "reps": 6,
+     "kg": 70,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Entretien."
+    },
+    {
+     "name": "Gainage abdominal",
+     "sets": 3,
+     "reps": 50,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Gainage ventral.",
+     "unit": "sec"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-22",
+   "name": "S9 · Réalisation — Streetlifting vitesse",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up technique",
+     "sets": 4,
+     "reps": 1,
+     "kg": 0,
+     "rpe": 6,
+     "rest": 90,
+     "cue": "Au poids du corps, vitesse maximale."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 3,
+     "reps": 3,
+     "kg": 21.25,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Vitesse. Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 3,
+     "reps": 3,
+     "kg": 28.75,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Vitesse. Charge = lest ajouté."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-23",
+   "name": "S9 · Réalisation — Squat technique & haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat pause 2 s",
+     "sets": 2,
+     "reps": 2,
+     "kg": 72.5,
+     "rpe": 6.5,
+     "rest": 150,
+     "cue": "Technique."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 2,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 7.5,
+     "rest": 90,
+     "cue": "Charge à compléter."
+    },
+    {
+     "name": "Face pull",
+     "sets": 2,
+     "reps": 15,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-25",
+   "name": "S10 · Réalisation — Tirage lourd",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 4,
+     "reps": 1,
+     "kg": 11.25,
+     "rpe": 8.5,
+     "rest": 240,
+     "cue": "Série lourde : 1 × 1 à RPE 8.5 (99 % du max), puis 3 × 1 à 93 %. Charge = lest ajouté. Conditions de compétition : départ bras tendus, pas de mouvement parasite.",
+     "plan": [
+      [
+       11.25,
+       1
+      ],
+      [
+       6.25,
+       1
+      ],
+      [
+       6.25,
+       1
+      ],
+      [
+       6.25,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 4,
+     "reps": 1,
+     "kg": 47.5,
+     "rpe": 8.5,
+     "rest": 240,
+     "cue": "Série lourde : 1 × 1 à RPE 8.5 (96 % du max), puis 3 × 1 à 90 %. Charge = lest ajouté. Départ bras tendus immobile, menton nettement au-dessus de la barre.",
+     "plan": [
+      [
+       47.5,
+       1
+      ],
+      [
+       40.0,
+       1
+      ],
+      [
+       40.0,
+       1
+      ],
+      [
+       40.0,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 2,
+     "reps": 8,
+     "kg": 30,
+     "rpe": 7.5,
+     "rest": 90,
+     "cue": "Entretien."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-26",
+   "name": "S10 · Réalisation — Dips lourd & squat",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Dips lestés",
+     "sets": 4,
+     "reps": 1,
+     "kg": 57.5,
+     "rpe": 8.5,
+     "rest": 240,
+     "cue": "Série lourde : 1 × 1 à RPE 8.5 (96 % du max), puis 3 × 1 à 90 %. Charge = lest ajouté. Descente sous la ligne des coudes, verrouillage complet en haut.",
+     "plan": [
+      [
+       57.5,
+       1
+      ],
+      [
+       50.0,
+       1
+      ],
+      [
+       50.0,
+       1
+      ],
+      [
+       50.0,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Squat",
+     "sets": 3,
+     "reps": 3,
+     "kg": 75.0,
+     "rpe": 7,
+     "rest": 180,
+     "cue": "Volume réduit."
+    },
+    {
+     "name": "Extension triceps",
+     "sets": 2,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 7.5,
+     "rest": 75,
+     "cue": "Entretien. Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-28",
+   "name": "S10 · Réalisation — Squat lourd",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat",
+     "sets": 4,
+     "reps": 1,
+     "kg": 95.0,
+     "rpe": 8.5,
+     "rest": 240,
+     "cue": "Série lourde : 1 × 1 à RPE 8.5 (96 % du max), puis 3 × 1 à 90 %. Commandes de compétition (attendre le signal en bas de la descente si tu es jugé ainsi).",
+     "plan": [
+      [
+       95.0,
+       1
+      ],
+      [
+       90.0,
+       1
+      ],
+      [
+       90.0,
+       1
+      ],
+      [
+       90.0,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Soulevé de terre roumain",
+     "sets": 2,
+     "reps": 6,
+     "kg": 70,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Entretien."
+    },
+    {
+     "name": "Gainage abdominal",
+     "sets": 3,
+     "reps": 50,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Gainage ventral.",
+     "unit": "sec"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-29",
+   "name": "S10 · Réalisation — Streetlifting vitesse",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up technique",
+     "sets": 4,
+     "reps": 1,
+     "kg": 0,
+     "rpe": 6,
+     "rest": 90,
+     "cue": "Au poids du corps, vitesse maximale."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 3,
+     "reps": 3,
+     "kg": 21.25,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Vitesse. Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 3,
+     "reps": 3,
+     "kg": 28.75,
+     "rpe": 7,
+     "rest": 150,
+     "cue": "Vitesse. Charge = lest ajouté."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-30",
+   "name": "S10 · Réalisation — Squat technique & haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat pause 2 s",
+     "sets": 2,
+     "reps": 2,
+     "kg": 72.5,
+     "rpe": 6.5,
+     "rest": 150,
+     "cue": "Technique."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 2,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 7.5,
+     "rest": 90,
+     "cue": "Charge à compléter."
+    },
+    {
+     "name": "Face pull",
+     "sets": 2,
+     "reps": 15,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Charge à compléter."
+    }
+   ]
+  },
+  {
+   "date": "2027-02-01",
+   "name": "S11 · Affûtage — Tirage affûtage",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 3,
+     "reps": 1,
+     "kg": 7.5,
+     "rpe": 7,
+     "rest": 180,
+     "cue": "Échauffement 10-15 min + montée progressive. Singles à la charge de ton 1er essai. Rapides et propres. Charge = lest ajouté."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 3,
+     "reps": 1,
+     "kg": 47.5,
+     "rpe": 7,
+     "rest": 210,
+     "cue": "Singles à la charge de ton 1er essai. Charge = lest ajouté."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 2,
+     "reps": 3,
+     "kg": 21.25,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Charge = lest ajouté."
+    }
+   ]
+  },
+  {
+   "date": "2027-02-02",
+   "name": "S11 · Affûtage — Dips & squat affûtage",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Dips lestés",
+     "sets": 3,
+     "reps": 1,
+     "kg": 57.5,
+     "rpe": 7,
+     "rest": 210,
+     "cue": "Échauffement 10-15 min + montée progressive. Singles à la charge de ton 1er essai. Charge = lest ajouté."
+    },
+    {
+     "name": "Squat",
+     "sets": 3,
+     "reps": 1,
+     "kg": 92.5,
+     "rpe": 7,
+     "rest": 210,
+     "cue": "Singles à la charge de ton 1er essai."
+    },
+    {
+     "name": "Squat",
+     "sets": 2,
+     "reps": 3,
+     "kg": 75.0,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Léger."
+    }
+   ]
+  },
+  {
+   "date": "2027-02-05",
+   "name": "S11 · Affûtage — Activation légère",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up technique",
+     "sets": 3,
+     "reps": 1,
+     "kg": 0,
+     "rpe": 6,
+     "rest": 90,
+     "cue": "Explosif."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 2,
+     "reps": 3,
+     "kg": 15.0,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 2,
+     "reps": 3,
+     "kg": 22.5,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Charge = lest ajouté."
+    },
+    {
+     "name": "Squat pause 2 s",
+     "sets": 2,
+     "reps": 2,
+     "kg": 65.0,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Technique."
+    }
+   ]
+  },
+  {
+   "date": "2027-02-08",
+   "name": "S12 · Compétition — Activation haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up technique",
+     "sets": 3,
+     "reps": 1,
+     "kg": 0,
+     "rpe": 6,
+     "rest": 120,
+     "cue": "Explosif."
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 3,
+     "reps": 2,
+     "kg": 17.5,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Charge = lest ajouté."
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 3,
+     "reps": 2,
+     "kg": 25.0,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Charge = lest ajouté."
+    }
+   ]
+  },
+  {
+   "date": "2027-02-09",
+   "name": "S12 · Compétition — Activation bas du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Squat",
+     "sets": 3,
+     "reps": 2,
+     "kg": 70.0,
+     "rpe": 6,
+     "rest": 150,
+     "cue": "Vitesse, rien de dur."
+    }
+   ]
+  },
+  {
+   "date": "2027-02-12",
+   "name": "S12 · Compétition — Test — total streetlifting",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Muscle-up lesté",
+     "sets": 3,
+     "reps": 1,
+     "kg": 13.75,
+     "rpe": 0,
+     "rest": 300,
+     "cue": "Échauffement complet. 1er essai sûr à 100 %, 2e = ton record actuel, 3e : 13,75 ; si le 2e est passé à RPE ≤ 8, tente 15. Charge = lest ajouté.",
+     "plan": [
+      [
+       7.5,
+       1
+      ],
+      [
+       11.25,
+       1
+      ],
+      [
+       13.75,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Tractions lestées",
+     "sets": 3,
+     "reps": 1,
+     "kg": 57.5,
+     "rpe": 0,
+     "rest": 300,
+     "cue": "3e essai : 57,5 ; si le 2e est passé facilement, tente 60. Charge = lest ajouté.",
+     "plan": [
+      [
+       47.5,
+       1
+      ],
+      [
+       52.5,
+       1
+      ],
+      [
+       57.5,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Dips lestés",
+     "sets": 3,
+     "reps": 1,
+     "kg": 70,
+     "rpe": 0,
+     "rest": 300,
+     "cue": "3e essai : 70 ; si le 2e est passé facilement, tente 75. Charge = lest ajouté.",
+     "plan": [
+      [
+       57.5,
+       1
+      ],
+      [
+       65,
+       1
+      ],
+      [
+       70,
+       1
+      ]
+     ]
+    },
+    {
+     "name": "Squat",
+     "sets": 3,
+     "reps": 1,
+     "kg": 105,
+     "rpe": 0,
+     "rest": 300,
+     "cue": "3e essai : 105 ; si le 2e est passé facilement, tente 110. Objectif total : 246 (réaliste) à 260 (si tout passe).",
+     "plan": [
+      [
+       92.5,
+       1
+      ],
+      [
+       100,
+       1
+      ],
+      [
+       105,
+       1
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}
