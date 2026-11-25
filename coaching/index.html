@@ -278,7 +278,15 @@ function catPill(s){var k=catKey(s),c=CATS[k];return '<span class="pill" style="
 var Q=new URLSearchParams(location.search);
 var INV={prog:(Q.get('prog')||'').toLowerCase().replace(/[^a-z0-9-]/g,''),nom:Q.get('nom')||'',coach:(Q.get('coach')||'').replace(/[^A-Za-z0-9]/g,'').toUpperCase(),client:Q.has('client')||Q.has('prog')||Q.has('coach')};
 if(location.search&&history.replaceState)try{history.replaceState(null,'',location.pathname)}catch(e){}
+function fmtKey(k){k=String(k||'').replace(/[^A-Za-z0-9]/g,'').toUpperCase();return k.length===12?k.slice(0,4)+'-'+k.slice(4,8)+'-'+k.slice(8):k}
+function vInstall(){var h='<div class="wrap" style="justify-content:center;padding-bottom:40px"><div style="display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center"><img src="logo-full.png" alt="MFC – Mathis Félicité Coaching" style="width:min(220px,62vw);height:auto"><h1 style="font-size:23px">Bienvenue'+(INV.nom?' '+esc(INV.nom):'')+' 👋</h1><span class="small muted lh">Installe l’appli sur ton iPhone en 3 étapes (30 secondes).</span></div>';
+ var S=[['1','Touche le bouton <b>Partager</b> de Safari','(le carré avec une flèche vers le haut, en bas de l’écran)'],['2','Choisis <b>« Sur l’écran d’accueil »</b>','puis <b>Ajouter</b>'],['3','Ouvre <b>MFC</b> depuis ta nouvelle icône','et entre ce code d’invitation quand il te sera demandé :']];
+ h+='<div class="card" style="gap:16px">'+S.map(function(x){return '<div class="feat"><span class="ico" style="background:rgba(212,175,106,.16);color:var(--gold);font-family:Sora,sans-serif;font-weight:700;font-size:18px">'+x[0]+'</span><div class="col" style="gap:3px"><span class="small">'+x[1]+'</span><span class="xs muted lh">'+x[2]+'</span></div></div>'}).join('');
+ if(INV.coach)h+='<div class="between" style="background:var(--bg2);border-radius:14px;padding:12px 14px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:21px;font-weight:700;letter-spacing:2px;color:var(--gold)">'+fmtKey(INV.coach)+'</span><button class="btn ghost sm" data-a="copyInv">Copier</button></div>';
+ h+='</div><span class="xs muted" style="text-align:center;line-height:1.5">L’appli installée garde tes séances, t’envoie tes rappels et fonctionne même hors connexion.</span><button class="link xs" data-a="inSafari" style="align-self:center;color:var(--dim)">Continuer dans Safari quand même</button>';
+ return h+'</div>'}
 function vWelcome(){
+ if((INV.coach||INV.prog)&&/iPhone|iPad|iPod/.test(navigator.userAgent)&&!standalone()&&!U.p.safari)return vInstall();
  var st=U.p.step||1;var h='<div class="wrap" style="justify-content:center;padding-bottom:40px">';
  if(st===1){
   h+='<div style="display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center"><img src="logo-full.png" alt="MFC – Mathis Félicité Coaching" style="width:min(250px,68vw);height:auto"><span class="small muted">Construire un corps capable de tout faire</span></div>';
@@ -297,6 +305,7 @@ function vWelcome(){
   h+='<div class="stack"><span class="small muted b">Comment tu utilises l’appli ?</span>';
   [['client','Je suis coaché·e par Mathis','Tu reçois ton programme et tu envoies ton bilan chaque semaine.','send'],['perso','Je gère mon propre programme','Pas de bilan à envoyer : tu suis tes séances en autonomie.','user']].forEach(function(o){var on=w.mode===o[0];h+='<button class="item" data-a="wMode" data-v="'+o[0]+'" style="border-color:'+(on?'var(--gold)':'var(--line)')+';background:'+(on?'rgba(212,175,106,.1)':'var(--card)')+';align-items:flex-start;padding:14px"><span class="ico" style="width:38px;height:38px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);color:'+(on?'var(--gold)':'var(--silver)')+';flex-shrink:0">'+ic(o[3],20)+'</span><span class="col" style="gap:3px"><span class="b small">'+o[1]+'</span><span class="xs muted lh">'+o[2]+'</span></span><span style="width:22px;height:22px;border-radius:50%;border:2px solid '+(on?'var(--gold)':'rgba(201,206,214,.3)')+';background:'+(on?'var(--gold)':'transparent')+';display:flex;align-items:center;justify-content:center;flex-shrink:0">'+(on?ic('check',13,'#0A1128',3.5):'')+'</span></button>'});
   h+='</div>';
+  if(w.mode==='client')h+='<label class="field">Code d’invitation de ton coach<input data-in="wf" data-f="code" value="'+esc(fmtKey(w.code||''))+'" placeholder="XXXX-XXXX-XXXX" autocapitalize="characters" autocomplete="off" spellcheck="false" style="font-family:ui-monospace,Menlo,monospace;letter-spacing:2px;text-transform:uppercase;font-weight:700"></label><span class="xs muted" style="margin-top:-8px">Il est dans le message de ton coach. Il relie ton appli à son espace.</span>';
   if(INV.prog)h+='<div class="info">'+ic('spark',15,'#D4AF6A',2)+' Ton programme sera chargé automatiquement.</div>';
   h+='<button class="btn" data-a="wDone">Entrer dans l’appli</button><button class="link" data-a="wStep" data-v="1" style="align-self:center">Retour</button>';
  }
@@ -778,9 +787,11 @@ function shiftFrom(date,n,exclId){D.sessions.forEach(function(s){if(!s.done&&!s.
 
 var A={
  go:function(d){go(d.v,d.p?{hl:d.p}:{});if(d.p){setTimeout(function(){var el=document.getElementById(d.p);if(el)el.scrollIntoView({behavior:'smooth',block:'center'})},60)}},
- wStep:function(d){U.p.step=+d.v;if(+d.v===2){U.wf.name=U.wf.name||INV.nom;U.wf.mode=U.wf.mode||(INV.client?'client':'')}render()},
+ wStep:function(d){U.p.step=+d.v;if(+d.v===2){U.wf.name=U.wf.name||INV.nom;U.wf.mode=U.wf.mode||(INV.client?'client':'');U.wf.code=U.wf.code||INV.coach}render()},
+ copyInv:function(){var c=fmtKey(INV.coach);(navigator.clipboard?navigator.clipboard.writeText(c):Promise.reject()).then(function(){toast('Code copié')}).catch(function(){toast(c)})},
+ inSafari:function(){U.p.safari=true;render()},
  wMode:function(d){U.wf.mode=d.v;render(true)},
- wDone:function(){var n=(U.wf.name||'').trim();if(!n){toast('Indique ton prénom');return}if(!U.wf.mode){toast('Choisis comment tu utilises l’appli');return}if(INV.coach)D.pendingCoach=INV.coach;
+ wDone:function(){var n=(U.wf.name||'').trim();if(!n){toast('Indique ton prénom');return}if(!U.wf.mode){toast('Choisis comment tu utilises l’appli');return}var ck=String(U.wf.code||INV.coach||'').replace(/[^A-Za-z0-9]/g,'').toUpperCase();if(U.wf.mode==='client'&&ck){if(ck.length!==12){toast('Le code d’invitation fait 12 caractères');return}D.pendingCoach=ck}
   D.profile={name:n,mode:U.wf.mode};D.welcomed=true;save();
   if(INV.prog){var code=INV.prog;INV.prog='';toast('Chargement de ton programme…');fetchProg(code).then(function(o){var k=importObj(o,{start:autoStart(o)});if(!D.program)D.program={name:PROG_NAMES[code]||'Mon programme',code:code};save();toast(k+' séances chargées 💪');go('home');syncNow()}).catch(function(){toast('Programme introuvable : demande le code à Mathis');go('home');syncNow()});return}
   go('home');syncNow()},
@@ -795,7 +806,7 @@ var A={
  askDrop:function(){U.p.drop=true;render(true)},
  cDrop:function(){var id=U.ctx.id;exitClient();rpc('mfc_coach_drop',{p_id:id}).then(function(){CL.list=CL.list.filter(function(x){return x.id!==id});clSave();toast('Client retiré');render(true)}).catch(function(e){toast(e.message)})},
  invMake:function(){var I=U.inv||{};var n=(I.nom||'').trim();if(!n){toast('Indique le prénom du client');return}toast('Création du lien…');
-  rpc('mfc_coach_invite').then(function(k){var base=location.origin+location.pathname;var url=base+'?nom='+encodeURIComponent(n)+'&coach='+k+(I.prog?'&prog='+I.prog:'&client=1');var txt='Salut '+n+' ! Voici ton appli de coaching MFC 💪\nOuvre ce lien sur ton iPhone dans Safari, puis Partager › « Sur l’écran d’accueil » :\n'+url;
+  rpc('mfc_coach_invite').then(function(k){var base=location.origin+location.pathname;var url=base+'?nom='+encodeURIComponent(n)+'&coach='+k+(I.prog?'&prog='+I.prog:'&client=1');var txt='Salut '+n+' ! Voici ton appli de coaching MFC 💪\n\n1. Ouvre ce lien sur ton iPhone, dans Safari :\n'+url+'\n\n2. Partager › « Sur l’écran d’accueil »\n\n3. Ouvre MFC depuis l’icône et entre ton code d’invitation : '+fmtKey(k);
    U.inv={};render(true);if(navigator.share)navigator.share({title:'MFC Coaching',text:txt}).catch(function(){});else copyTxt(txt)}).catch(function(e){toast(/not_coach/.test(e.message)?'Compte coach pas encore activé':e.message)})},
  coachLink:function(){var k=(($('#coachKey')||{}).value||'').trim();if(!k){toast('Colle la clé de ton coach');return}D.pendingCoach=k;persist();syncNow().then(function(){if(D.pendingCoach)linkCoach(k)});render(true)},
  bwSkip:function(){U.bwSkip=TODAY;render(true)},
