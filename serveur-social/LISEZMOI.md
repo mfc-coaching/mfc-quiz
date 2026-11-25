@@ -24,3 +24,9 @@ seul le compteur de la semaine repart à zéro. Ne jamais publier la clé « sec
 - Comptes : Table Editor > `mfc_coach_accounts` (prénom, code, date de dernière synchro).
 - `schema-5-coach.sql` : espace coach. À coller après le 4, en remplaçant `TON-CODE` (dernière ligne) par le code de récupération du compte coach.
 - Retirer le rôle coach : Table Editor > `mfc_coach_accounts` > colonne `is_coach` = false.
+
+## MFC Coaching : notifications
+1. Edge Functions > Deploy a new function > Via Editor : nom `mfc-push`, coller `edge-mfc-push/index.ts`, Deploy, puis désactiver « Verify JWT » dans les réglages de la fonction.
+2. Coller `schema-6-notifications.sql` dans le SQL Editor (active pg_cron + pg_net et programme l'envoi chaque minute).
+- Les clés VAPID sont créées automatiquement (table `mfc_push_keys`). Ne jamais publier la colonne `priv`.
+- File d'envoi : Table Editor > `mfc_push_queue` ; abonnés : `mfc_push_subs`.

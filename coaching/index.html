@@ -326,7 +326,7 @@ function vHome(){
   h+='<button class="wd" data-a="day" data-v="'+dt+'" style="border-color:'+(isT?'var(--gold)':'transparent')+';color:var(--text)"><span class="xs" style="color:'+(isT?'var(--gold)':'var(--muted)')+';font-weight:700">'+l+'</span>'+circ+'</button>'});
  h+='</div></section>';
  if(bilanDue())h+='<button class="item" data-a="go" data-v="bilan" style="border-color:rgba(167,123,255,.5);background:linear-gradient(150deg,rgba(167,123,255,.18),var(--card) 70%)"><span style="width:40px;height:40px;border-radius:13px;background:rgba(167,123,255,.2);color:#A77BFF;display:flex;align-items:center;justify-content:center;flex-shrink:0">'+ic('send',20,'currentColor',2)+'</span><span class="col"><span class="b small">C’est l’heure de ton bilan</span><span class="xs muted">2 minutes pour dire à Mathis comment s’est passée ta semaine</span></span>'+ic('chev',18,'#9AA3B5',2)+'</button>';
- if(!D.settings.calAt&&D.sessions.some(function(s){return !s.done&&s.date>=TODAY}))h+='<button class="item" data-a="go" data-v="me" data-p="rem"><span style="width:40px;height:40px;border-radius:13px;background:rgba(46,204,143,.16);color:#2ECC8F;display:flex;align-items:center;justify-content:center;flex-shrink:0">'+ic('bell',20,'currentColor',2)+'</span><span class="col"><span class="b small">Active tes rappels</span><span class="xs muted">Ajoute tes séances au calendrier de ton iPhone</span></span>'+ic('chev',18,'#9AA3B5',2)+'</button>';
+ if(!D.settings.calAt&&!(D.sync.push&&D.sync.push.on)&&D.sessions.some(function(s){return !s.done&&s.date>=TODAY}))h+='<button class="item" data-a="go" data-v="me" data-p="rem"><span style="width:40px;height:40px;border-radius:13px;background:rgba(46,204,143,.16);color:#2ECC8F;display:flex;align-items:center;justify-content:center;flex-shrink:0">'+ic('bell',20,'currentColor',2)+'</span><span class="col"><span class="b small">Active tes rappels</span><span class="xs muted">Reçois une notification avant chaque séance</span></span>'+ic('chev',18,'#9AA3B5',2)+'</button>';
  var ad=adherence();var wk=D.sessions.filter(function(s){return s.done&&s.date>=mon&&s.date<=add(mon,6)});var plannedW=D.sessions.filter(function(s){return s.date>=mon&&s.date<=add(mon,6)}).length;
  h+='<section class="kpis"><div class="kpi"><span>Séances cette semaine</span><b>'+wk.length+'<span style="font-size:15px;color:var(--muted)"> / '+plannedW+'</span></b></div><div class="kpi"><span>Régularité (4 sem.)</span><b style="color:'+(ad==null?'var(--text)':ad>=80?'var(--ok)':ad>=50?'var(--gold)':'var(--warn)')+'">'+(ad==null?'—':ad+' %')+'</b></div></section>';
  return h+'</div>'+tabs()+sheet();
@@ -543,10 +543,17 @@ function vMe(){
  h+='</section>';
  // Rappels
  h+='<section class="card" id="rem\" style="gap:12px;'+(U.p.hl==='rem'?'border-color:rgba(46,204,143,.6)':'')+'"><div class="row" style="gap:10px"><span style="width:36px;height:36px;border-radius:12px;background:rgba(46,204,143,.16);color:#2ECC8F;display:flex;align-items:center;justify-content:center">'+ic('bell',19,'currentColor',2)+'</span><h3>Rappels de séances</h3></div>';
- h+='<span class="small muted lh">Tes '+up+' prochaines séances s’ajoutent au <b style="color:var(--silver)">calendrier de ton iPhone</b>, avec le jour, l’heure et une alerte. Ça marche même appli fermée.</span>';
- h+='<div class="btns"><label class="mini" style="font-size:11px">Heure de séance<input type="time" data-in="set" data-f="time" value="'+esc(st.time)+'"></label><label class="mini" style="font-size:11px">Alerte<select data-in="set" data-f="remind">'+[[0,'Aucune'],[15,'15 min avant'],[30,'30 min avant'],[60,'1 h avant'],[120,'2 h avant'],[-1,'La veille 20 h']].map(function(o){return '<option value="'+o[0]+'"'+(+st.remind===o[0]?' selected':'')+'>'+o[1]+'</option>'}).join('')+'</select></label></div>';
- h+='<button class="btn" data-a="ics" style="background:#2ECC8F">'+ic('cal',18,'#0A1128',2.2)+'Ajouter à mon calendrier</button>';
- h+='<span class="xs muted lh">'+(st.calAt?'Dernier ajout : '+dShort(st.calAt)+'. ':'')+'Sur iPhone : touche « Ajouter tout » (ou ouvre le fichier puis « Ajouter tout »). Si tu modifies ton planning, refais l’ajout.'+(isClient()?' Un rappel de bilan est aussi ajouté chaque dimanche à 18 h.':'')+'</span><button class="link xs" data-a="icsFile" style="align-self:flex-start">Ça ne marche pas ? Télécharger le fichier</button>';
+ h+='<span class="small muted lh">Choisis ton heure d’entraînement habituelle et quand être prévenu.</span>';
+ h+='<div class="btns"><label class="mini" style="font-size:11px">Heure de séance<input type="time" data-in="set" data-f="time" value="'+esc(st.time)+'"></label><label class="mini" style="font-size:11px">Alerte<select data-in="set" data-f="remind">'+[[0,'À l’heure pile'],[15,'15 min avant'],[30,'30 min avant'],[60,'1 h avant'],[120,'2 h avant'],[-1,'La veille 20 h']].map(function(o){return '<option value="'+o[0]+'"'+(+st.remind===o[0]?' selected':'')+'>'+o[1]+'</option>'}).join('')+'</select></label></div>';
+ var ps=pushState();
+ h+='<div class="stack" style="gap:10px;background:var(--bg2);border-radius:14px;padding:14px"><div class="between"><span class="small b">🔔 Notifications</span><span class="xs b" style="color:'+ps.col+'">'+ps.label+'</span></div>';
+ if(ps.k==='install')h+='<span class="xs muted lh">Sur iPhone, les notifications ne marchent que dans l’appli installée : dans Safari, touche <b style="color:var(--silver)">Partager › Sur l’écran d’accueil</b>, puis ouvre MFC depuis l’icône.</span>';
+ else if(ps.k==='denied')h+='<span class="xs muted lh">Tu as refusé les notifications. Pour les réactiver : Réglages de l’iPhone › Notifications › MFC.</span>';
+ else if(ps.k==='unsupported')h+='<span class="xs muted lh">Cet appareil ne gère pas les notifications web (iPhone : iOS 16.4 minimum). Utilise le calendrier ci-dessous.</span>';
+ else if(ps.k==='on')h+='<span class="xs muted lh">Tu reçois un rappel avant chaque séance'+(isClient()?', et le dimanche à 18 h pour ton bilan':'')+(isCoach()?'. Tu es aussi prévenu quand un client t’envoie son bilan':'')+(D.sync.coachName?'. Tu es prévenu quand '+esc(coachName())+' te laisse un mot ou commente une séance':'')+'.</span><div class="btns"><button class="btn ghost sm" data-a="pushTest">Tester</button><button class="btn ghost sm" data-a="pushOff">Désactiver</button></div>';
+ else h+='<span class="xs muted lh">Un rappel avant chaque séance, directement sur ton téléphone, même appli fermée'+(isCoach()?', et une alerte quand un client t’envoie son bilan':'')+'.</span><button class="btn" data-a="pushOn" style="background:#2ECC8F">'+ic('bell',18,'#0A1128',2.2)+'Activer les notifications</button>';
+ h+='</div>';
+ h+=U.p.cal?'<button class="btn ghost sm" data-a="ics" style="width:100%">'+ic('cal',16)+'Ajouter mes '+up+' séances au calendrier</button><span class="xs muted lh">'+(st.calAt?'Dernier ajout : '+dShort(st.calAt)+'. ':'')+'Sur iPhone : touche « Ajouter tout ». Si tu modifies ton planning, refais l’ajout.</span><button class="link xs" data-a="icsFile" style="align-self:flex-start">Ça ne marche pas ? Télécharger le fichier</button>':'<button class="link xs" data-a="calOpen" style="align-self:flex-start">Je préfère le calendrier de l’iPhone</button>';
  h+='</section>';
  if(isCoach())h+='<section class="card" style="flex-direction:row;align-items:center;gap:12px;border-color:rgba(212,175,106,.4)"><span style="font-size:22px">🎓</span><div class="col"><span class="b small">Compte coach activé</span><span class="xs muted">Tes clients sont dans l’onglet Clients.</span></div></section>';
  else if(D.profile&&D.profile.mode==='client'){h+='<section class="card" style="gap:10px"><h3>Mon coach</h3>'+(D.sync.coachName?'<div class="row small" style="gap:8px">'+ic('check',16,'#2ECC8F',3)+'<span>Relié à <b>'+esc(D.sync.coachName)+'</b> : il voit tes séances et reçoit tes bilans.</span></div>':(D.pendingCoach?'<span class="small muted">Liaison en cours…</span>':'<span class="xs muted lh">Pas encore relié. Ouvre le lien d’invitation de ton coach, ou colle sa clé ici.</span><div class="row" style="gap:8px"><input class="inp" id="coachKey" placeholder="Clé coach" autocapitalize="characters" style="flex:1;text-transform:uppercase"><button class="btn sm" data-a="coachLink">Relier</button></div>'))+'</section>'}
@@ -567,7 +574,7 @@ function buildIcs(){var st=D.settings;var tm=(st.time||'18:00').replace(':','')+
  var L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//MFC Coaching//FR','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:MFC Coaching'];
  sorted().filter(function(s){return !s.done&&!s.skipped&&s.date>=TODAY}).forEach(function(s){var t=title(s);var m=estDur(s);
   L.push('BEGIN:VEVENT','UID:'+s.id+'@mfc-coaching','DTSTAMP:'+stamp,'DTSTART:'+s.date.replace(/-/g,'')+'T'+tm,'DURATION:PT'+Math.max(30,m)+'M','SUMMARY:'+icsEsc('💪 '+t.t+' · MFC'),'DESCRIPTION:'+icsEsc((t.sub?t.sub+'\n':'')+s.exercises.map(function(e){return '• '+e.name+' — '+target(e)}).join('\n')+'\n\nOuvre l’appli MFC pour démarrer ta séance.'));
-  var r=+st.remind;if(r){L.push('BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+icsEsc('Séance MFC : '+t.t),r===-1?'TRIGGER;VALUE=DATE-TIME:'+add(s.date,-1).replace(/-/g,'')+'T200000':'TRIGGER:-PT'+r+'M','END:VALARM')}
+  var r=+st.remind;if(1){L.push('BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+icsEsc('Séance MFC : '+t.t),r===-1?'TRIGGER;VALUE=DATE-TIME:'+add(s.date,-1).replace(/-/g,'')+'T200000':r?'TRIGGER:-PT'+r+'M':'TRIGGER:PT0M','END:VALARM')}
   L.push('END:VEVENT')});
  if(isClient()){var sun=add(monday(TODAY),6);L.push('BEGIN:VEVENT','UID:bilan-hebdo@mfc-coaching','DTSTAMP:'+stamp,'DTSTART:'+sun.replace(/-/g,'')+'T180000','DURATION:PT15M','RRULE:FREQ=WEEKLY;BYDAY=SU','SUMMARY:'+icsEsc('📋 Bilan de la semaine · MFC'),'DESCRIPTION:'+icsEsc('Ouvre l’appli MFC > Bilan, et envoie-le à Mathis (2 min).'),'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:Bilan MFC','TRIGGER:PT0M','END:VALARM','END:VEVENT')}
  L.push('END:VCALENDAR');return L.map(fold).join('\r\n')}
@@ -642,7 +649,7 @@ function syncNow(){if(U.ctx||!D.welcomed||!D.profile)return Promise.resolve();if
  SYNC=rpc('mfc_coach_open').then(function(r){if(U.ctx)return;D.sync.code=r.code;D.sync.isCoach=!!r.is_coach;D.sync.coachName=r.coach_name||null;var remote=r.data;
    if(remote&&r.rev!==D.sync.rev){if(D.sync.dirty||!D.sync.rev&&!D.sync.at){adopt(merge(D,remote),r.rev,true);D.sync.dirty=true;CHG++;persist();refreshUI();return pushTo(r.rev,0)}adopt(remote,r.rev);D.sync.at=Date.now();persist();refreshUI();return}
    if(!remote||D.sync.dirty)return pushTo(r.rev,0);D.sync.at=Date.now();persist()})
- .then(function(){SY.err=null;if(D.pendingCoach&&!U.ctx)return linkCoach(D.pendingCoach,true)},function(e){SY.err=e.code||'server';SY.msg=e.message})
+ .then(function(){SY.err=null;pushPlan().catch(function(){});if(D.pendingCoach&&!U.ctx)return linkCoach(D.pendingCoach,true)},function(e){SY.err=e.code||'server';SY.msg=e.message})
  .then(function(){SY.busy=false;SYNC=null;if(U.view==='me')refreshUI()});
  return SYNC}
 function syncLabel(){if(SY.busy)return ['Synchronisation…','var(--muted)'];if(SY.err==='notready')return ['Sauvegarde en ligne pas encore activée sur le serveur','var(--muted)'];if(SY.err==='offline')return ['Hors ligne : ça se synchronisera tout seul','var(--gold)'];if(SY.err)return ['Problème de synchro : '+(SY.msg||''),'var(--warn)'];if(D.sync.dirty)return ['Modifications en attente d’envoi','var(--gold)'];if(D.sync.at){var m=Math.round((Date.now()-D.sync.at)/60000);return ['Sauvegardé en ligne · '+(m<1?'à l’instant':m<60?'il y a '+m+' min':'le '+dShort(loc(new Date(D.sync.at)))),'var(--ok)']}return ['Pas encore sauvegardé en ligne','var(--muted)']}
@@ -650,6 +657,40 @@ function claim(code){return rpc('mfc_coach_claim',{p_code:code}).then(function(r
  D.sync.code=r.code;if(r.data&&r.data.profile){adopt(r.data,r.rev)}else{D.sync.rev=r.rev;D.sync.dirty=true;persist()}D.sync.at=Date.now();persist();return r})}
 document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')syncNow();else if(D.sync.dirty)syncNow()});
 window.addEventListener('online',function(){syncNow()});
+
+/* ---------- Notifications ---------- */
+var SWR=null;
+if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js',{scope:'./'}).then(function(r){SWR=r}).catch(function(){})});
+function standalone(){return (window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true}
+function pushState(){var ios=/iPhone|iPad|iPod/.test(navigator.userAgent);
+ if(D.sync.push&&D.sync.push.on&&typeof Notification!=='undefined'&&Notification.permission==='granted')return {k:'on',label:'Activées ✓',col:'var(--ok)'};
+ if(ios&&!standalone())return {k:'install',label:'Appli à installer',col:'var(--gold)'};
+ if(!('serviceWorker' in navigator)||!('PushManager' in window)||typeof Notification==='undefined')return {k:'unsupported',label:'Non disponible',col:'var(--muted)'};
+ if(Notification.permission==='denied')return {k:'denied',label:'Bloquées',col:'var(--warn)'};
+ return {k:'off',label:'Désactivées',col:'var(--muted)'}}
+function vapidKey(){var c=null;try{c=localStorage.getItem('mfcc_vapid')}catch(e){}if(c)return Promise.resolve(c);
+ return fetch(SB_URL+'/functions/v1/mfc-push?key=1').then(function(r){if(!r.ok)throw sErr('Serveur de notifications pas encore installé','notready');return r.json()}).then(function(j){if(!j.pub)throw sErr('Clé de notification manquante','server');try{localStorage.setItem('mfcc_vapid',j.pub)}catch(e){}return j.pub})}
+function u8(b){b=b.replace(/-/g,'+').replace(/_/g,'/');b+='='.repeat((4-b.length%4)%4);var r=atob(b),a=new Uint8Array(r.length);for(var i=0;i<r.length;i++)a[i]=r.charCodeAt(i);return a}
+function swReady(){return SWR?Promise.resolve(SWR):navigator.serviceWorker.register('sw.js',{scope:'./'}).then(function(r){SWR=r;return navigator.serviceWorker.ready.then(function(){return r})})}
+function localAt(date,hhmm){var p=String(hhmm||'18:00').split(':');var d=new Date(date+'T00:00:00');d.setHours(+p[0]||0,+p[1]||0,0,0);return d}
+function pushItems(){var st=D.settings,r=+st.remind,out=[];var now=Date.now();
+ sorted().filter(function(s){return !s.done&&!s.skipped&&s.date>=TODAY&&s.date<=add(TODAY,14)}).forEach(function(s){var t=title(s);var at,ttl;
+  var body=s.exercises.slice(0,3).map(function(e){return e.name}).join(' · ')+(s.exercises.length>3?' +'+(s.exercises.length-3):'')+' · ≈ '+durTxt(estDur(s));
+  if(r===-1){at=localAt(add(s.date,-1),'20:00');ttl='📅 Demain à '+st.time+' : '+t.t}
+  else{at=new Date(localAt(s.date,st.time).getTime()-r*60000);ttl=r?'💪 Dans '+(r>=60?(r/60)+' h':r+' min')+' : '+t.t:'💪 C’est l’heure : '+t.t}
+  if(at.getTime()>now+60000)out.push({at:at.toISOString(),title:ttl,body:body,tag:'s-'+s.id,kind:'seance'})});
+ if(isClient()){[0,7].forEach(function(k){var mon=add(monday(TODAY),k);if(bilanSent(mon))return;var at=localAt(add(mon,6),'18:00');if(at.getTime()>now+60000)out.push({at:at.toISOString(),title:'📋 C’est l’heure de ton bilan',body:'2 minutes pour dire à '+coachName()+' comment s’est passée ta semaine.',tag:'bilan-'+mon,kind:'bilan'})})}
+ return out}
+function pushPlan(force,extra){if(U.ctx||!D.sync.push||!D.sync.push.on)return Promise.resolve();var items=pushItems();var h=JSON.stringify(items);
+ if(!force&&!extra&&h===D.sync.pushHash&&Date.now()-(D.sync.pushAt||0)<6*3600000)return Promise.resolve();
+ return rpc('mfc_push_plan',{p_items:extra?items.concat(extra):items}).then(function(){if(!extra){D.sync.pushHash=h;D.sync.pushAt=Date.now()}persist()})}
+function pushEnable(){if(typeof Notification==='undefined'||!('serviceWorker' in navigator)){toast('Notifications non disponibles ici');return}
+ var perm=Notification.requestPermission();
+ Promise.resolve(perm).then(function(p){if(p!=='granted')throw sErr(p==='denied'?'Notifications refusées':'Autorisation non donnée','perm');return Promise.all([swReady(),vapidKey()])})
+ .then(function(a){var reg=a[0],key=a[1];return reg.pushManager.getSubscription().then(function(old){if(old&&D.sync.push&&D.sync.push.key===key)return old;return (old?old.unsubscribe():Promise.resolve()).then(function(){return reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:u8(key)})})}).then(function(sub){var j=sub.toJSON();return rpc('mfc_push_subscribe',{p_endpoint:j.endpoint,p_p256dh:j.keys.p256dh,p_auth:j.keys.auth}).then(function(){D.sync.push={on:true,endpoint:j.endpoint,key:key};persist();return pushPlan(true)})})})
+ .then(function(){toast('Notifications activées ✅');render(true)},function(e){toast(e.message||'Activation impossible');render(true)})}
+function pushDisable(){var ep=D.sync.push&&D.sync.push.endpoint;D.sync.push={on:false};persist();render(true);
+ swReady().then(function(r){return r.pushManager.getSubscription()}).then(function(s){if(s)return s.unsubscribe()}).catch(function(){});if(ep)rpc('mfc_push_unsubscribe',{p_endpoint:ep}).catch(function(){});toast('Notifications désactivées')}
 
 /* ---------- Espace coach ---------- */
 var CL=null;try{CL=JSON.parse(localStorage.getItem('mfcc_clients')||'null')}catch(e){}
@@ -745,6 +786,10 @@ var A={
   go('home');syncNow()},
  news:function(){D.news=false;persist();render(true)},
  clReload:function(){loadClients()},
+ pushOn:function(){pushEnable()},
+ pushOff:function(){pushDisable()},
+ pushTest:function(){pushPlan(true,[{at:new Date(Date.now()+20000).toISOString(),title:'✅ Notifications MFC activées',body:'Tes rappels de séance arriveront ici.',tag:'test',kind:'test'}]).then(function(){toast('Notification de test envoyée : elle arrive dans la minute')}).catch(function(e){toast(e.message)})},
+ calOpen:function(){U.p.cal=true;render(true)},
  cOpen:function(d){enterClient(d.id)},
  exitClient:function(){exitClient()},
  askDrop:function(){U.p.drop=true;render(true)},
@@ -851,7 +896,7 @@ var IN={
  ex:function(d,v){var e=U.edit.exercises[+d.i];if(d.f==='name'||d.f==='cue')e[d.f]=v;else{e[d.f]=num(v);if(d.f==='sets'||d.f==='kg'||d.f==='reps')delete e.plan}},
  wf:function(d,v){U.wf[d.f]=v},
  bl:function(d,v){U.bl[d.f]=v},
- set:function(d,v){D.settings[d.f]=d.f==='remind'?+v:v;save()},
+ set:function(d,v){D.settings[d.f]=d.f==='remind'?+v:v;save();pushPlan(true).catch(function(){})},
  prog:function(d,v){v=v.trim();if(v){D.program=D.program||{};D.program.name=v}else D.program=null;save()},
  pf:function(d,v){if(v.trim()){D.profile.name=v.trim();save()}},
  moveDate:function(d,v){if(/^\d{4}-\d{2}-\d{2}$/.test(v))A.moveTo({v:v})},
