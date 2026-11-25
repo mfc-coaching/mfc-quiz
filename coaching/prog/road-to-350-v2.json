@@ -250,24 +250,76 @@
      "rpe": 6.5,
      "rest": 150,
      "cue": "Volume, vitesse constante à la remontée. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "name": "S2 · Accumulation — Hypertrophie haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Développé incliné haltères",
+     "sets": 3,
+     "reps": 10,
+     "kg": 20,
+     "rpe": 8,
+     "rest": 120,
+     "cue": "Pecs (haut). 10 → 12 reps. Omoplates serrées, coudes à ~45°. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
-     "name": "Extension triceps",
+     "name": "Rowing poitrine appuyée",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 120,
+     "cue": "Dos (épaisseur). 10 → 12 reps. Poitrine collée au banc : zéro lombaires. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Écarté poulie vis-à-vis",
      "sets": 3,
      "reps": 12,
      "kg": 0,
      "rpe": 8,
      "rest": 75,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15. Charge à compléter."
+     "cue": "Pecs (étirement). 12 → 16 reps. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
      "name": "Élévations latérales",
-     "sets": 3,
+     "sets": 4,
      "reps": 15,
      "kg": 8,
      "rpe": 8,
      "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+     "cue": "Épaules (faisceau moyen). 15 → 20 reps, coude légèrement fléchi, monte jusqu’à l’horizontale. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Oiseau",
+     "sets": 3,
+     "reps": 15,
+     "kg": 6,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Arrière d’épaule. 15 → 20 reps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Curl barre EZ",
+     "sets": 3,
+     "reps": 10,
+     "kg": 25,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Biceps. 10 → 12 reps, sans élan. En superset avec l’extension triceps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Extension triceps poulie",
+     "sets": 3,
+     "reps": 12,
+     "kg": 25,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Triceps. 12 → 15 reps, coudes fixes. Corde ou barre. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
@@ -400,15 +452,6 @@
      "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
     },
     {
-     "name": "Développé incliné haltères",
-     "sets": 3,
-     "reps": 10,
-     "kg": 20,
-     "rpe": 8,
-     "rest": 90,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12."
-    },
-    {
      "name": "Face pull",
      "sets": 3,
      "reps": 15,
@@ -416,15 +459,6 @@
      "rpe": 7,
      "rest": 60,
      "cue": "Santé des épaules. Charge à compléter."
-    },
-    {
-     "name": "Curl marteau",
-     "sets": 3,
-     "reps": 12,
-     "kg": 12,
-     "rpe": 8,
-     "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15."
     }
    ]
   },
@@ -502,24 +536,76 @@
      "rpe": 7.0,
      "rest": 150,
      "cue": "Volume, vitesse constante à la remontée. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-09",
+   "name": "S3 · Accumulation — Hypertrophie haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Développé incliné haltères",
+     "sets": 3,
+     "reps": 10,
+     "kg": 20,
+     "rpe": 8,
+     "rest": 120,
+     "cue": "Pecs (haut). 10 → 12 reps. Omoplates serrées, coudes à ~45°. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
-     "name": "Extension triceps",
+     "name": "Rowing poitrine appuyée",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 120,
+     "cue": "Dos (épaisseur). 10 → 12 reps. Poitrine collée au banc : zéro lombaires. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Écarté poulie vis-à-vis",
      "sets": 3,
      "reps": 12,
      "kg": 0,
      "rpe": 8,
      "rest": 75,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15. Charge à compléter."
+     "cue": "Pecs (étirement). 12 → 16 reps. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
      "name": "Élévations latérales",
-     "sets": 3,
+     "sets": 4,
      "reps": 15,
      "kg": 8,
      "rpe": 8,
      "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+     "cue": "Épaules (faisceau moyen). 15 → 20 reps, coude légèrement fléchi, monte jusqu’à l’horizontale. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Oiseau",
+     "sets": 3,
+     "reps": 15,
+     "kg": 6,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Arrière d’épaule. 15 → 20 reps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Curl barre EZ",
+     "sets": 3,
+     "reps": 10,
+     "kg": 25,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Biceps. 10 → 12 reps, sans élan. En superset avec l’extension triceps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Extension triceps poulie",
+     "sets": 3,
+     "reps": 12,
+     "kg": 25,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Triceps. 12 → 15 reps, coudes fixes. Corde ou barre. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
@@ -652,15 +738,6 @@
      "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
     },
     {
-     "name": "Développé incliné haltères",
-     "sets": 3,
-     "reps": 10,
-     "kg": 20,
-     "rpe": 8,
-     "rest": 90,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12."
-    },
-    {
      "name": "Face pull",
      "sets": 3,
      "reps": 15,
@@ -668,15 +745,6 @@
      "rpe": 7,
      "rest": 60,
      "cue": "Santé des épaules. Charge à compléter."
-    },
-    {
-     "name": "Curl marteau",
-     "sets": 3,
-     "reps": 12,
-     "kg": 12,
-     "rpe": 8,
-     "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15."
     }
    ]
   },
@@ -754,24 +822,76 @@
      "rpe": 7.5,
      "rest": 150,
      "cue": "Volume, vitesse constante à la remontée. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-16",
+   "name": "S4 · Accumulation — Hypertrophie haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Développé incliné haltères",
+     "sets": 3,
+     "reps": 10,
+     "kg": 20,
+     "rpe": 8,
+     "rest": 120,
+     "cue": "Pecs (haut). 10 → 12 reps. Omoplates serrées, coudes à ~45°. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
-     "name": "Extension triceps",
+     "name": "Rowing poitrine appuyée",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 120,
+     "cue": "Dos (épaisseur). 10 → 12 reps. Poitrine collée au banc : zéro lombaires. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Écarté poulie vis-à-vis",
      "sets": 3,
      "reps": 12,
      "kg": 0,
      "rpe": 8,
      "rest": 75,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15. Charge à compléter."
+     "cue": "Pecs (étirement). 12 → 16 reps. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
      "name": "Élévations latérales",
-     "sets": 3,
+     "sets": 4,
      "reps": 15,
      "kg": 8,
      "rpe": 8,
      "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+     "cue": "Épaules (faisceau moyen). 15 → 20 reps, coude légèrement fléchi, monte jusqu’à l’horizontale. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Oiseau",
+     "sets": 3,
+     "reps": 15,
+     "kg": 6,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Arrière d’épaule. 15 → 20 reps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Curl barre EZ",
+     "sets": 3,
+     "reps": 10,
+     "kg": 25,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Biceps. 10 → 12 reps, sans élan. En superset avec l’extension triceps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Extension triceps poulie",
+     "sets": 3,
+     "reps": 12,
+     "kg": 25,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Triceps. 12 → 15 reps, coudes fixes. Corde ou barre. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
@@ -904,15 +1024,6 @@
      "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. Charge à compléter."
     },
     {
-     "name": "Développé incliné haltères",
-     "sets": 3,
-     "reps": 10,
-     "kg": 20,
-     "rpe": 8,
-     "rest": 90,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12."
-    },
-    {
      "name": "Face pull",
      "sets": 3,
      "reps": 15,
@@ -920,15 +1031,6 @@
      "rpe": 7,
      "rest": 60,
      "cue": "Santé des épaules. Charge à compléter."
-    },
-    {
-     "name": "Curl marteau",
-     "sets": 3,
-     "reps": 12,
-     "kg": 12,
-     "rpe": 8,
-     "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 12 → 15."
     }
    ]
   },
@@ -1201,24 +1303,76 @@
      "rpe": 7.5,
      "rest": 150,
      "cue": "Volume. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-30",
+   "name": "S6 · Intensification — Hypertrophie haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Développé incliné haltères",
+     "sets": 3,
+     "reps": 8,
+     "kg": 20,
+     "rpe": 8.5,
+     "rest": 120,
+     "cue": "Pecs (haut). 8 → 10 reps. Omoplates serrées, coudes à ~45°. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
-     "name": "Extension triceps",
+     "name": "Rowing poitrine appuyée",
+     "sets": 3,
+     "reps": 8,
+     "kg": 0,
+     "rpe": 8.5,
+     "rest": 120,
+     "cue": "Dos (épaisseur). 8 → 10 reps. Poitrine collée au banc : zéro lombaires. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Écarté poulie vis-à-vis",
      "sets": 3,
      "reps": 10,
      "kg": 0,
-     "rpe": 8,
+     "rpe": 8.5,
      "rest": 75,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12. Charge à compléter."
+     "cue": "Pecs (étirement). 10 → 14 reps. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
      "name": "Élévations latérales",
-     "sets": 3,
+     "sets": 4,
      "reps": 15,
      "kg": 8,
-     "rpe": 8,
+     "rpe": 8.5,
      "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+     "cue": "Épaules (faisceau moyen). 15 → 20 reps, coude légèrement fléchi, monte jusqu’à l’horizontale. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Oiseau",
+     "sets": 3,
+     "reps": 15,
+     "kg": 6,
+     "rpe": 8.5,
+     "rest": 60,
+     "cue": "Arrière d’épaule. 15 → 20 reps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Curl barre EZ",
+     "sets": 3,
+     "reps": 8,
+     "kg": 25,
+     "rpe": 8.5,
+     "rest": 60,
+     "cue": "Biceps. 8 → 10 reps, sans élan. En superset avec l’extension triceps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Extension triceps poulie",
+     "sets": 3,
+     "reps": 10,
+     "kg": 25,
+     "rpe": 8.5,
+     "rest": 60,
+     "cue": "Triceps. 10 → 13 reps, coudes fixes. Corde ou barre. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
@@ -1371,15 +1525,6 @@
      "rpe": 7,
      "rest": 60,
      "cue": "Charge à compléter."
-    },
-    {
-     "name": "Curl marteau",
-     "sets": 2,
-     "reps": 12,
-     "kg": 14,
-     "rpe": 8,
-     "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
@@ -1514,24 +1659,76 @@
      "rpe": 7.5,
      "rest": 150,
      "cue": "Volume. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-06",
+   "name": "S7 · Intensification — Hypertrophie haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Développé incliné haltères",
+     "sets": 3,
+     "reps": 8,
+     "kg": 20,
+     "rpe": 8.5,
+     "rest": 120,
+     "cue": "Pecs (haut). 8 → 10 reps. Omoplates serrées, coudes à ~45°. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
-     "name": "Extension triceps",
+     "name": "Rowing poitrine appuyée",
+     "sets": 3,
+     "reps": 8,
+     "kg": 0,
+     "rpe": 8.5,
+     "rest": 120,
+     "cue": "Dos (épaisseur). 8 → 10 reps. Poitrine collée au banc : zéro lombaires. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Écarté poulie vis-à-vis",
      "sets": 3,
      "reps": 10,
      "kg": 0,
-     "rpe": 8,
+     "rpe": 8.5,
      "rest": 75,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12. Charge à compléter."
+     "cue": "Pecs (étirement). 10 → 14 reps. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
      "name": "Élévations latérales",
-     "sets": 3,
+     "sets": 4,
      "reps": 15,
      "kg": 8,
-     "rpe": 8,
+     "rpe": 8.5,
      "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+     "cue": "Épaules (faisceau moyen). 15 → 20 reps, coude légèrement fléchi, monte jusqu’à l’horizontale. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Oiseau",
+     "sets": 3,
+     "reps": 15,
+     "kg": 6,
+     "rpe": 8.5,
+     "rest": 60,
+     "cue": "Arrière d’épaule. 15 → 20 reps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Curl barre EZ",
+     "sets": 3,
+     "reps": 8,
+     "kg": 25,
+     "rpe": 8.5,
+     "rest": 60,
+     "cue": "Biceps. 8 → 10 reps, sans élan. En superset avec l’extension triceps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Extension triceps poulie",
+     "sets": 3,
+     "reps": 10,
+     "kg": 25,
+     "rpe": 8.5,
+     "rest": 60,
+     "cue": "Triceps. 10 → 13 reps, coudes fixes. Corde ou barre. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
@@ -1684,15 +1881,6 @@
      "rpe": 7,
      "rest": 60,
      "cue": "Charge à compléter."
-    },
-    {
-     "name": "Curl marteau",
-     "sets": 2,
-     "reps": 12,
-     "kg": 14,
-     "rpe": 8,
-     "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
@@ -1827,24 +2015,76 @@
      "rpe": 7.5,
      "rest": 150,
      "cue": "Volume. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-13",
+   "name": "S8 · Intensification — Hypertrophie haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Développé incliné haltères",
+     "sets": 3,
+     "reps": 8,
+     "kg": 20,
+     "rpe": 8.5,
+     "rest": 120,
+     "cue": "Pecs (haut). 8 → 10 reps. Omoplates serrées, coudes à ~45°. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
-     "name": "Extension triceps",
+     "name": "Rowing poitrine appuyée",
+     "sets": 3,
+     "reps": 8,
+     "kg": 0,
+     "rpe": 8.5,
+     "rest": 120,
+     "cue": "Dos (épaisseur). 8 → 10 reps. Poitrine collée au banc : zéro lombaires. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Écarté poulie vis-à-vis",
      "sets": 3,
      "reps": 10,
      "kg": 0,
-     "rpe": 8,
+     "rpe": 8.5,
      "rest": 75,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 10 → 12. Charge à compléter."
+     "cue": "Pecs (étirement). 10 → 14 reps. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
      "name": "Élévations latérales",
-     "sets": 3,
+     "sets": 4,
      "reps": 15,
      "kg": 8,
-     "rpe": 8,
+     "rpe": 8.5,
      "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge. 15 → 20."
+     "cue": "Épaules (faisceau moyen). 15 → 20 reps, coude légèrement fléchi, monte jusqu’à l’horizontale. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Oiseau",
+     "sets": 3,
+     "reps": 15,
+     "kg": 6,
+     "rpe": 8.5,
+     "rest": 60,
+     "cue": "Arrière d’épaule. 15 → 20 reps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Curl barre EZ",
+     "sets": 3,
+     "reps": 8,
+     "kg": 25,
+     "rpe": 8.5,
+     "rest": 60,
+     "cue": "Biceps. 8 → 10 reps, sans élan. En superset avec l’extension triceps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Extension triceps poulie",
+     "sets": 3,
+     "reps": 10,
+     "kg": 25,
+     "rpe": 8.5,
+     "rest": 60,
+     "cue": "Triceps. 10 → 13 reps, coudes fixes. Corde ou barre. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
@@ -1997,15 +2237,6 @@
      "rpe": 7,
      "rest": 60,
      "cue": "Charge à compléter."
-    },
-    {
-     "name": "Curl marteau",
-     "sets": 2,
-     "reps": 12,
-     "kg": 14,
-     "rpe": 8,
-     "rest": 60,
-     "cue": "Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
@@ -2119,15 +2350,76 @@
      "rpe": 7,
      "rest": 180,
      "cue": "Volume réduit."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-20",
+   "name": "S9 · Réalisation — Hypertrophie haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Développé incliné haltères",
+     "sets": 2,
+     "reps": 8,
+     "kg": 20,
+     "rpe": 8,
+     "rest": 120,
+     "cue": "Pecs (haut). 8 → 10 reps. Omoplates serrées, coudes à ~45°. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
-     "name": "Extension triceps",
+     "name": "Rowing poitrine appuyée",
+     "sets": 2,
+     "reps": 8,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 120,
+     "cue": "Dos (épaisseur). 8 → 10 reps. Poitrine collée au banc : zéro lombaires. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Écarté poulie vis-à-vis",
      "sets": 2,
      "reps": 10,
      "kg": 0,
-     "rpe": 7.5,
+     "rpe": 8,
      "rest": 75,
-     "cue": "Entretien. Charge à compléter."
+     "cue": "Pecs (étirement). 10 → 14 reps. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Élévations latérales",
+     "sets": 3,
+     "reps": 15,
+     "kg": 8,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Épaules (faisceau moyen). 15 → 20 reps, coude légèrement fléchi, monte jusqu’à l’horizontale. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Oiseau",
+     "sets": 2,
+     "reps": 15,
+     "kg": 6,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Arrière d’épaule. 15 → 20 reps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Curl barre EZ",
+     "sets": 2,
+     "reps": 8,
+     "kg": 25,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Biceps. 8 → 10 reps, sans élan. En superset avec l’extension triceps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Extension triceps poulie",
+     "sets": 2,
+     "reps": 10,
+     "kg": 25,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Triceps. 10 → 13 reps, coudes fixes. Corde ou barre. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
@@ -2362,15 +2654,76 @@
      "rpe": 7,
      "rest": 180,
      "cue": "Volume réduit."
+    }
+   ]
+  },
+  {
+   "date": "2027-01-27",
+   "name": "S10 · Réalisation — Hypertrophie haut du corps",
+   "done": false,
+   "exercises": [
+    {
+     "name": "Développé incliné haltères",
+     "sets": 2,
+     "reps": 8,
+     "kg": 20,
+     "rpe": 8,
+     "rest": 120,
+     "cue": "Pecs (haut). 8 → 10 reps. Omoplates serrées, coudes à ~45°. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     },
     {
-     "name": "Extension triceps",
+     "name": "Rowing poitrine appuyée",
+     "sets": 2,
+     "reps": 8,
+     "kg": 0,
+     "rpe": 8,
+     "rest": 120,
+     "cue": "Dos (épaisseur). 8 → 10 reps. Poitrine collée au banc : zéro lombaires. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Écarté poulie vis-à-vis",
      "sets": 2,
      "reps": 10,
      "kg": 0,
-     "rpe": 7.5,
+     "rpe": 8,
      "rest": 75,
-     "cue": "Entretien. Charge à compléter."
+     "cue": "Pecs (étirement). 10 → 14 reps. Charge à compléter. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Élévations latérales",
+     "sets": 3,
+     "reps": 15,
+     "kg": 8,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Épaules (faisceau moyen). 15 → 20 reps, coude légèrement fléchi, monte jusqu’à l’horizontale. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Oiseau",
+     "sets": 2,
+     "reps": 15,
+     "kg": 6,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Arrière d’épaule. 15 → 20 reps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Curl barre EZ",
+     "sets": 2,
+     "reps": 8,
+     "kg": 25,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Biceps. 8 → 10 reps, sans élan. En superset avec l’extension triceps. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
+    },
+    {
+     "name": "Extension triceps poulie",
+     "sets": 2,
+     "reps": 10,
+     "kg": 25,
+     "rpe": 8,
+     "rest": 60,
+     "cue": "Triceps. 10 → 13 reps, coudes fixes. Corde ou barre. Double progression : quand tu fais le haut de la fourchette sur toutes les séries, ajoute de la charge."
     }
    ]
   },
