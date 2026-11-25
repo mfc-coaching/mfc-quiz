@@ -1,5 +1,5 @@
 /* MFC Coaching — service worker : hors-ligne + notifications */
-const CACHE = 'mfc-coaching-v1';
+const CACHE = 'mfc-coaching-v2';
 
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', (e) => {
