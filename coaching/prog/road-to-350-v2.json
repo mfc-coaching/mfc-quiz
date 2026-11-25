@@ -489,7 +489,7 @@
      "name": "Dips lestés",
      "sets": 5,
      "reps": 4,
-     "kg": 27.5,
+     "kg": 26.25,
      "rpe": 7.5,
      "rest": 210,
      "cue": "Échauffement 10-15 min + montée progressive. Charge = lest ajouté. Épaules sous les coudes en bas. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
@@ -698,7 +698,7 @@
      "name": "Tractions lestées",
      "sets": 5,
      "reps": 4,
-     "kg": 25.0,
+     "kg": 23.75,
      "rpe": 8,
      "rest": 210,
      "cue": "Charge = lest ajouté. Pas d’échec. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
@@ -741,7 +741,7 @@
      "name": "Dips lestés",
      "sets": 5,
      "reps": 4,
-     "kg": 30.0,
+     "kg": 28.75,
      "rpe": 8,
      "rest": 210,
      "cue": "Échauffement 10-15 min + montée progressive. Charge = lest ajouté. Épaules sous les coudes en bas. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge."
@@ -855,7 +855,7 @@
      "name": "Dips lestés",
      "sets": 4,
      "reps": 6,
-     "kg": 21.25,
+     "kg": 20.0,
      "rpe": 7.5,
      "rest": 150,
      "cue": "Volume. Charge = lest ajouté."
@@ -889,7 +889,7 @@
      "name": "Dips pause 1 s",
      "sets": 3,
      "reps": 5,
-     "kg": 17.5,
+     "kg": 16.25,
      "rpe": 7,
      "rest": 120,
      "cue": "Pause d’1 s en bas. Charge = lest ajouté."
@@ -950,7 +950,7 @@
      "name": "Tractions lestées",
      "sets": 4,
      "reps": 1,
-     "kg": 33.75,
+     "kg": 32.5,
      "rpe": 8,
      "rest": 210,
      "cue": "Monte jusqu’à un single à RPE 8. Charge = lest ajouté."
@@ -984,7 +984,7 @@
      "name": "Dips lestés",
      "sets": 4,
      "reps": 1,
-     "kg": 40.0,
+     "kg": 37.5,
      "rpe": 8,
      "rest": 210,
      "cue": "Échauffement 10-15 min + montée progressive. Monte jusqu’à un single à RPE 8. Charge = lest ajouté."
@@ -1011,7 +1011,7 @@
      "name": "Dips lestés",
      "sets": 2,
      "reps": 5,
-     "kg": 15.0,
+     "kg": 13.75,
      "rpe": 6,
      "rest": 150,
      "cue": "Volume léger. Charge = lest ajouté."
@@ -1110,13 +1110,13 @@
      "name": "Tractions lestées",
      "sets": 5,
      "reps": 1,
-     "kg": 33.75,
+     "kg": 32.5,
      "rpe": 8,
      "rest": 210,
      "cue": "Série lourde : 1 × 1 à RPE 8 (87.5 % du max), puis 4 × 3 à 82.5 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
      "plan": [
       [
-       33.75,
+       32.5,
        1
       ],
       [
@@ -1166,29 +1166,29 @@
      "name": "Dips lestés",
      "sets": 5,
      "reps": 1,
-     "kg": 42.5,
+     "kg": 41.25,
      "rpe": 8,
      "rest": 210,
      "cue": "Série lourde : 1 × 1 à RPE 8 (87.5 % du max), puis 4 × 3 à 82.5 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
      "plan": [
       [
-       42.5,
+       41.25,
        1
       ],
       [
-       36.25,
+       35.0,
        3
       ],
       [
-       36.25,
+       35.0,
        3
       ],
       [
-       36.25,
+       35.0,
        3
       ],
       [
-       36.25,
+       35.0,
        3
       ]
      ]
@@ -1315,7 +1315,7 @@
      "name": "Dips lestés",
      "sets": 4,
      "reps": 4,
-     "kg": 26.25,
+     "kg": 25.0,
      "rpe": 7.5,
      "rest": 150,
      "cue": "Volume. Charge = lest ajouté."
@@ -1349,7 +1349,7 @@
      "name": "Dips pause 1 s",
      "sets": 3,
      "reps": 4,
-     "kg": 22.5,
+     "kg": 21.25,
      "rpe": 7,
      "rest": 120,
      "cue": "Charge = lest ajouté."
@@ -1392,13 +1392,13 @@
      "name": "Muscle-up lesté",
      "sets": 5,
      "reps": 1,
-     "kg": 6.25,
+     "kg": 5.0,
      "rpe": 8,
      "rest": 180,
      "cue": "Série lourde : 1 × 1 à RPE 8 (95 % du max), puis 4 × 1 à 91 %. Charge = lest ajouté. Si le single lourd dépasse RPE 8,5, fais les singles suivants 1,25 kg plus léger.",
      "plan": [
       [
-       6.25,
+       5.0,
        1
       ],
       [
@@ -1423,29 +1423,29 @@
      "name": "Tractions lestées",
      "sets": 5,
      "reps": 1,
-     "kg": 37.5,
+     "kg": 35.0,
      "rpe": 8,
      "rest": 210,
      "cue": "Série lourde : 1 × 1 à RPE 8 (90 % du max), puis 4 × 3 à 85 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
      "plan": [
       [
-       37.5,
+       35.0,
        1
       ],
       [
-       31.25,
+       30.0,
        3
       ],
       [
-       31.25,
+       30.0,
        3
       ],
       [
-       31.25,
+       30.0,
        3
       ],
       [
-       31.25,
+       30.0,
        3
       ]
      ]
@@ -1479,29 +1479,29 @@
      "name": "Dips lestés",
      "sets": 5,
      "reps": 1,
-     "kg": 46.25,
+     "kg": 43.75,
      "rpe": 8,
      "rest": 210,
      "cue": "Série lourde : 1 × 1 à RPE 8 (90 % du max), puis 4 × 3 à 85 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
      "plan": [
       [
-       46.25,
+       43.75,
        1
       ],
       [
-       38.75,
+       37.5,
        3
       ],
       [
-       38.75,
+       37.5,
        3
       ],
       [
-       38.75,
+       37.5,
        3
       ],
       [
-       38.75,
+       37.5,
        3
       ]
      ]
@@ -1628,7 +1628,7 @@
      "name": "Dips lestés",
      "sets": 4,
      "reps": 4,
-     "kg": 30.0,
+     "kg": 27.5,
      "rpe": 7.5,
      "rest": 150,
      "cue": "Volume. Charge = lest ajouté."
@@ -1662,7 +1662,7 @@
      "name": "Dips pause 1 s",
      "sets": 3,
      "reps": 4,
-     "kg": 25.0,
+     "kg": 23.75,
      "rpe": 7,
      "rest": 120,
      "cue": "Charge = lest ajouté."
@@ -1705,29 +1705,29 @@
      "name": "Muscle-up lesté",
      "sets": 5,
      "reps": 1,
-     "kg": 7.5,
+     "kg": 6.25,
      "rpe": 8,
      "rest": 180,
      "cue": "Série lourde : 1 × 1 à RPE 8 (97 % du max), puis 4 × 1 à 92 %. Charge = lest ajouté. Si le single lourd dépasse RPE 8,5, fais les singles suivants 1,25 kg plus léger.",
      "plan": [
       [
-       7.5,
+       6.25,
        1
       ],
       [
-       3.75,
+       2.5,
        1
       ],
       [
-       3.75,
+       2.5,
        1
       ],
       [
-       3.75,
+       2.5,
        1
       ],
       [
-       3.75,
+       2.5,
        1
       ]
      ]
@@ -1736,29 +1736,29 @@
      "name": "Tractions lestées",
      "sets": 5,
      "reps": 1,
-     "kg": 40.0,
+     "kg": 38.75,
      "rpe": 8,
      "rest": 210,
      "cue": "Série lourde : 1 × 1 à RPE 8 (92.5 % du max), puis 4 × 3 à 87.5 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
      "plan": [
       [
-       40.0,
+       38.75,
        1
       ],
       [
-       33.75,
+       32.5,
        3
       ],
       [
-       33.75,
+       32.5,
        3
       ],
       [
-       33.75,
+       32.5,
        3
       ],
       [
-       33.75,
+       32.5,
        3
       ]
      ]
@@ -1792,29 +1792,29 @@
      "name": "Dips lestés",
      "sets": 5,
      "reps": 1,
-     "kg": 48.75,
+     "kg": 46.25,
      "rpe": 8,
      "rest": 210,
      "cue": "Série lourde : 1 × 1 à RPE 8 (92.5 % du max), puis 4 × 3 à 87.5 %. Charge = lest ajouté. Règle : si la dernière série est à RPE ≤ 6,5, +2,5 kg la semaine suivante ; si RPE ≥ 9,5, garde la charge.",
      "plan": [
       [
-       48.75,
+       46.25,
        1
       ],
       [
-       42.5,
+       40.0,
        3
       ],
       [
-       42.5,
+       40.0,
        3
       ],
       [
-       42.5,
+       40.0,
        3
       ],
       [
-       42.5,
+       40.0,
        3
       ]
      ]
@@ -1932,7 +1932,7 @@
      "name": "Tractions lestées",
      "sets": 4,
      "reps": 4,
-     "kg": 25.0,
+     "kg": 23.75,
      "rpe": 7.5,
      "rest": 150,
      "cue": "Volume. Charge = lest ajouté."
@@ -1941,7 +1941,7 @@
      "name": "Dips lestés",
      "sets": 4,
      "reps": 4,
-     "kg": 32.5,
+     "kg": 31.25,
      "rpe": 7.5,
      "rest": 150,
      "cue": "Volume. Charge = lest ajouté."
@@ -1975,7 +1975,7 @@
      "name": "Dips pause 1 s",
      "sets": 3,
      "reps": 4,
-     "kg": 27.5,
+     "kg": 26.25,
      "rpe": 7,
      "rest": 120,
      "cue": "Charge = lest ajouté."
@@ -2018,13 +2018,13 @@
      "name": "Muscle-up lesté",
      "sets": 4,
      "reps": 1,
-     "kg": 10.0,
+     "kg": 8.75,
      "rpe": 8.5,
      "rest": 240,
      "cue": "Série lourde : 1 × 1 à RPE 8.5 (97 % du max), puis 3 × 1 à 92 %. Charge = lest ajouté. Conditions de compétition : départ bras tendus, pas de mouvement parasite.",
      "plan": [
       [
-       10.0,
+       8.75,
        1
       ],
       [
@@ -2045,25 +2045,25 @@
      "name": "Tractions lestées",
      "sets": 4,
      "reps": 1,
-     "kg": 43.75,
+     "kg": 41.25,
      "rpe": 8.5,
      "rest": 240,
      "cue": "Série lourde : 1 × 1 à RPE 8.5 (92.5 % du max), puis 3 × 2 à 87.5 %. Charge = lest ajouté. Départ bras tendus immobile, menton nettement au-dessus de la barre.",
      "plan": [
       [
-       43.75,
+       41.25,
        1
       ],
       [
-       37.5,
+       36.25,
        2
       ],
       [
-       37.5,
+       36.25,
        2
       ],
       [
-       37.5,
+       36.25,
        2
       ]
      ]
@@ -2088,25 +2088,25 @@
      "name": "Dips lestés",
      "sets": 4,
      "reps": 1,
-     "kg": 52.5,
+     "kg": 51.25,
      "rpe": 8.5,
      "rest": 240,
      "cue": "Série lourde : 1 × 1 à RPE 8.5 (92.5 % du max), puis 3 × 2 à 87.5 %. Charge = lest ajouté. Descente sous la ligne des coudes, verrouillage complet en haut.",
      "plan": [
       [
-       52.5,
+       51.25,
        1
       ],
       [
-       46.25,
+       45.0,
        2
       ],
       [
-       46.25,
+       45.0,
        2
       ],
       [
-       46.25,
+       45.0,
        2
       ]
      ]
@@ -2261,25 +2261,25 @@
      "name": "Muscle-up lesté",
      "sets": 4,
      "reps": 1,
-     "kg": 11.25,
+     "kg": 10.0,
      "rpe": 8.5,
      "rest": 240,
      "cue": "Série lourde : 1 × 1 à RPE 8.5 (99 % du max), puis 3 × 1 à 93 %. Charge = lest ajouté. Conditions de compétition : départ bras tendus, pas de mouvement parasite.",
      "plan": [
       [
-       11.25,
+       10.0,
        1
       ],
       [
-       6.25,
+       5.0,
        1
       ],
       [
-       6.25,
+       5.0,
        1
       ],
       [
-       6.25,
+       5.0,
        1
       ]
      ]
@@ -2288,25 +2288,25 @@
      "name": "Tractions lestées",
      "sets": 4,
      "reps": 1,
-     "kg": 47.5,
+     "kg": 46.25,
      "rpe": 8.5,
      "rest": 240,
      "cue": "Série lourde : 1 × 1 à RPE 8.5 (96 % du max), puis 3 × 1 à 90 %. Charge = lest ajouté. Départ bras tendus immobile, menton nettement au-dessus de la barre.",
      "plan": [
       [
-       47.5,
+       46.25,
        1
       ],
       [
-       40.0,
+       38.75,
        1
       ],
       [
-       40.0,
+       38.75,
        1
       ],
       [
-       40.0,
+       38.75,
        1
       ]
      ]
@@ -2331,25 +2331,25 @@
      "name": "Dips lestés",
      "sets": 4,
      "reps": 1,
-     "kg": 57.5,
+     "kg": 55.0,
      "rpe": 8.5,
      "rest": 240,
      "cue": "Série lourde : 1 × 1 à RPE 8.5 (96 % du max), puis 3 × 1 à 90 %. Charge = lest ajouté. Descente sous la ligne des coudes, verrouillage complet en haut.",
      "plan": [
       [
-       57.5,
+       55.0,
        1
       ],
       [
-       50.0,
+       47.5,
        1
       ],
       [
-       50.0,
+       47.5,
        1
       ],
       [
-       50.0,
+       47.5,
        1
       ]
      ]
@@ -2445,7 +2445,7 @@
      "name": "Tractions lestées",
      "sets": 3,
      "reps": 3,
-     "kg": 21.25,
+     "kg": 20.0,
      "rpe": 7,
      "rest": 150,
      "cue": "Vitesse. Charge = lest ajouté."
@@ -2454,7 +2454,7 @@
      "name": "Dips lestés",
      "sets": 3,
      "reps": 3,
-     "kg": 28.75,
+     "kg": 27.5,
      "rpe": 7,
      "rest": 150,
      "cue": "Vitesse. Charge = lest ajouté."
@@ -2513,7 +2513,7 @@
      "name": "Tractions lestées",
      "sets": 3,
      "reps": 1,
-     "kg": 47.5,
+     "kg": 43.75,
      "rpe": 7,
      "rest": 210,
      "cue": "Singles à la charge de ton 1er essai. Charge = lest ajouté."
@@ -2522,7 +2522,7 @@
      "name": "Tractions lestées",
      "sets": 2,
      "reps": 3,
-     "kg": 21.25,
+     "kg": 20.0,
      "rpe": 6,
      "rest": 150,
      "cue": "Charge = lest ajouté."
@@ -2538,7 +2538,7 @@
      "name": "Dips lestés",
      "sets": 3,
      "reps": 1,
-     "kg": 57.5,
+     "kg": 53.75,
      "rpe": 7,
      "rest": 210,
      "cue": "Échauffement 10-15 min + montée progressive. Singles à la charge de ton 1er essai. Charge = lest ajouté."
@@ -2581,7 +2581,7 @@
      "name": "Tractions lestées",
      "sets": 2,
      "reps": 3,
-     "kg": 15.0,
+     "kg": 13.75,
      "rpe": 6,
      "rest": 150,
      "cue": "Charge = lest ajouté."
@@ -2590,7 +2590,7 @@
      "name": "Dips lestés",
      "sets": 2,
      "reps": 3,
-     "kg": 22.5,
+     "kg": 21.25,
      "rpe": 6,
      "rest": 150,
      "cue": "Charge = lest ajouté."
@@ -2624,7 +2624,7 @@
      "name": "Tractions lestées",
      "sets": 3,
      "reps": 2,
-     "kg": 17.5,
+     "kg": 16.25,
      "rpe": 6,
      "rest": 150,
      "cue": "Charge = lest ajouté."
@@ -2633,7 +2633,7 @@
      "name": "Dips lestés",
      "sets": 3,
      "reps": 2,
-     "kg": 25.0,
+     "kg": 23.75,
      "rpe": 6,
      "rest": 150,
      "cue": "Charge = lest ajouté."
@@ -2665,21 +2665,21 @@
      "name": "Muscle-up lesté",
      "sets": 3,
      "reps": 1,
-     "kg": 13.75,
+     "kg": 12.5,
      "rpe": 0,
      "rest": 300,
-     "cue": "Échauffement complet. 1er essai sûr à 100 %, 2e = ton record actuel, 3e : 13,75 ; si le 2e est passé à RPE ≤ 8, tente 15. Charge = lest ajouté.",
+     "cue": "Échauffement complet. 1er essai sûr, 2e = ton niveau du moment, 3e : 12,5 ; si le 2e est passé à RPE ≤ 8, tente 13,75. Charge = lest ajouté.",
      "plan": [
       [
        7.5,
        1
       ],
       [
-       11.25,
+       10.0,
        1
       ],
       [
-       13.75,
+       12.5,
        1
       ]
      ]
@@ -2688,21 +2688,21 @@
      "name": "Tractions lestées",
      "sets": 3,
      "reps": 1,
-     "kg": 57.5,
+     "kg": 55.0,
      "rpe": 0,
      "rest": 300,
-     "cue": "3e essai : 57,5 ; si le 2e est passé facilement, tente 60. Charge = lest ajouté.",
+     "cue": "1er essai sûr, 2e = ton niveau du moment, 3e : 55 ; si le 2e est passé à RPE ≤ 8, tente 57,5. Charge = lest ajouté.",
      "plan": [
       [
-       47.5,
+       43.75,
        1
       ],
       [
-       52.5,
+       50.0,
        1
       ],
       [
-       57.5,
+       55.0,
        1
       ]
      ]
@@ -2711,21 +2711,21 @@
      "name": "Dips lestés",
      "sets": 3,
      "reps": 1,
-     "kg": 70,
+     "kg": 65.0,
      "rpe": 0,
      "rest": 300,
-     "cue": "3e essai : 70 ; si le 2e est passé facilement, tente 75. Charge = lest ajouté.",
+     "cue": "1er essai sûr, 2e = ton niveau du moment, 3e : 65 ; si le 2e est passé à RPE ≤ 8, tente 67,5. Charge = lest ajouté.",
      "plan": [
       [
-       57.5,
+       53.75,
        1
       ],
       [
-       65,
+       60.0,
        1
       ],
       [
-       70,
+       65.0,
        1
       ]
      ]
@@ -2734,21 +2734,21 @@
      "name": "Squat",
      "sets": 3,
      "reps": 1,
-     "kg": 105,
+     "kg": 105.0,
      "rpe": 0,
      "rest": 300,
-     "cue": "3e essai : 105 ; si le 2e est passé facilement, tente 110. Objectif total : 246 (réaliste) à 260 (si tout passe).",
+     "cue": "1er essai sûr, 2e = ton niveau du moment, 3e : 105 ; si le 2e est passé à RPE ≤ 8, tente 107,5. Total visé : 237,5 kg (jusqu’à 246,25 si tout passe).",
      "plan": [
       [
        92.5,
        1
       ],
       [
-       100,
+       100.0,
        1
       ],
       [
-       105,
+       105.0,
        1
       ]
      ]
