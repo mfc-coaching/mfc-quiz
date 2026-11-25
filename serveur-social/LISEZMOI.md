@@ -22,3 +22,5 @@ seul le compteur de la semaine repart à zéro. Ne jamais publier la clé « sec
 - `schema-4-coaching.sql` : à coller une fois (SQL Editor > New query > Run). Crée les comptes coaching avec code de récupération.
 - Utilise la connexion anonyme déjà activée pour les Défis. Rien d'autre à régler.
 - Comptes : Table Editor > `mfc_coach_accounts` (prénom, code, date de dernière synchro).
+- `schema-5-coach.sql` : espace coach. À coller après le 4, en remplaçant `TON-CODE` (dernière ligne) par le code de récupération du compte coach.
+- Retirer le rôle coach : Table Editor > `mfc_coach_accounts` > colonne `is_coach` = false.
