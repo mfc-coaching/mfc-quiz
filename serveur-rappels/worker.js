@@ -4,7 +4,7 @@
    - Toutes les 15 min (cron), envoie un « push » vide aux abonnés dont c’est l’heure.
    Secrets à définir : VAPID_PUBLIC (clé publique base64url), VAPID_PRIVATE_JWK (JSON), VAPID_SUBJECT (mailto:...).
    KV à lier sous le nom SUBS. */
-const CORS = { 'Access-Control-Allow-Origin': 'https://mathisfel83.github.io', 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type' };
+const CORS = { 'Access-Control-Allow-Origin': 'https://mfc-coaching.github.io', 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type' };
 const json = (o, s = 200) => new Response(JSON.stringify(o), { status: s, headers: { 'Content-Type': 'application/json', ...CORS } });
 
 async function keyOf(endpoint) {

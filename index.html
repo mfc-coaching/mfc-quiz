@@ -1038,7 +1038,7 @@ var SB_URL='https://eodjnceukxokexwwocxm.supabase.co', SB_KEY='sb_publishable_Ff
 try{ var _sbo=localStorage.getItem('mfcq_sburl'); if(_sbo) SB_URL=_sbo; }catch(e){}
 var NATIVE=!!(window.Capacitor&&window.Capacitor.isNativePlatform&&window.Capacitor.isNativePlatform());
 function plug(n){ return NATIVE&&window.Capacitor.Plugins?window.Capacitor.Plugins[n]:null; }
-var WEB_URL='https://mathisfel83.github.io/mfc-quiz/';
+var WEB_URL='https://mfc-coaching.github.io/mfc-quiz/';
 var APP_URL=NATIVE?WEB_URL:location.origin+location.pathname;
 var sbP=null;
 function sbSess(){ try{ return JSON.parse(localStorage.getItem('mfcq_sb')||'null'); }catch(e){ return null; } }
