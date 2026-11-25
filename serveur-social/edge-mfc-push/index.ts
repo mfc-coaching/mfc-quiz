@@ -1,6 +1,6 @@
 // MFC Coaching — envoi des notifications (Supabase Edge Function « mfc-push »)
-// À créer dans Supabase : Edge Functions > Deploy a new function > Via Editor,
-// nom « mfc-push », coller ce fichier, Deploy, puis désactiver « Verify JWT ».
+// Appelée chaque minute par pg_cron quand des notifications sont dues, et par l'appli (?key) pour la clé publique.
+// Pas de JWT exigé : la fonction n'accepte aucune donnée, elle envoie seulement ce qui est dû dans la file.
 // Les clés VAPID sont créées automatiquement au premier appel et gardées dans la base.
 import postgres from 'npm:postgres@3.4.5';
 
@@ -64,7 +64,7 @@ async function send(sub, msg, k) {
 }
 
 
-if (typeof Deno !== 'undefined' && Deno.serve) Deno.serve(async (req) => {
+Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: CORS });
   try {
     const k = await keys();
@@ -75,6 +75,7 @@ if (typeof Deno !== 'undefined' && Deno.serve) Deno.serve(async (req) => {
        where q.id in (select id from public.mfc_push_queue where not sent and send_at <= now() order by send_at limit 200 for update skip locked)
       returning q.id, q.account_id, q.send_at, q.title, q.body, q.url, q.tag`;
     let ok = 0, dead = 0;
+    const errors = [];
     for (const it of due) {
       if (Date.now() - new Date(it.send_at).getTime() > 3 * 3600 * 1000) continue; // trop ancien : on ignore
       const subs = await sql`select endpoint, p256dh, auth from public.mfc_push_subs where account_id = ${it.account_id}`;
@@ -83,10 +84,12 @@ if (typeof Deno !== 'undefined' && Deno.serve) Deno.serve(async (req) => {
           const r = await send(s, { title: it.title, body: it.body || '', url: it.url || './', tag: it.tag || 'mfc' }, k);
           if (r.status === 404 || r.status === 410) { await sql`delete from public.mfc_push_subs where endpoint = ${s.endpoint}`; dead++; }
           else if (r.ok) ok++;
-        } catch (_e) { /* abonné injoignable : on passe */ }
+          else errors.push(r.status + ' ' + (await r.text()).slice(0, 200));
+        } catch (e) { errors.push(String(e && e.message || e).slice(0, 200)); }
       }
     }
-    return new Response(JSON.stringify({ due: due.length, sent: ok, removed: dead }), { headers: CORS });
+    if (errors.length) console.log('push errors', JSON.stringify(errors));
+    return new Response(JSON.stringify({ due: due.length, sent: ok, removed: dead, errors }), { headers: CORS });
   } catch (e) {
     return new Response(JSON.stringify({ error: String(e && e.message || e) }), { status: 500, headers: CORS });
   }
