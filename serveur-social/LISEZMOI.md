@@ -17,3 +17,8 @@ seul le compteur de la semaine repart à zéro. Ne jamais publier la clé « sec
 ## App iOS
 - `.github/workflows/ios.yml` construit l'app sur un Mac de GitHub à chaque modification (contrôle).
 - Envoi sur TestFlight : Actions > App iOS > Run workflow > cocher « testflight » (après avoir ajouté les secrets ASC_KEY_ID, ASC_ISSUER_ID, ASC_KEY_P8, APPLE_TEAM_ID).
+
+## MFC Coaching : sauvegarde en ligne
+- `schema-4-coaching.sql` : à coller une fois (SQL Editor > New query > Run). Crée les comptes coaching avec code de récupération.
+- Utilise la connexion anonyme déjà activée pour les Défis. Rien d'autre à régler.
+- Comptes : Table Editor > `mfc_coach_accounts` (prénom, code, date de dernière synchro).
