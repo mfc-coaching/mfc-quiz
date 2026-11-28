@@ -716,7 +716,14 @@ window.addEventListener('online',function(){syncNow()});
 
 /* ---------- Notifications ---------- */
 var SWR=null;
-if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js',{scope:'./'}).then(function(r){SWR=r}).catch(function(){})});
+/* Mise à jour automatique : vérifie une nouvelle version à chaque ouverture et recharge l’appli (jamais pendant une séance en cours) */
+var UPD=false,HAD_SW=!!('serviceWorker' in navigator&&navigator.serviceWorker.controller);
+function updReload(){if(U.view==='run'||U.view==='edit'||U.sheet){UPD=true;return}UPD=false;location.reload()}
+if('serviceWorker' in navigator){
+ window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js',{scope:'./',updateViaCache:'none'}).then(function(r){SWR=r;r.update().catch(function(){})}).catch(function(){})});
+ navigator.serviceWorker.addEventListener('controllerchange',function(){if(!HAD_SW){HAD_SW=true;return}updReload()});
+ document.addEventListener('visibilitychange',function(){if(document.visibilityState!=='visible')return;if(UPD)updReload();else if(SWR)SWR.update().catch(function(){})});
+}
 function standalone(){return (window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true}
 function pushState(){var ios=/iPhone|iPad|iPod/.test(navigator.userAgent);
  if(D.sync.push&&D.sync.push.on&&typeof Notification!=='undefined'&&Notification.permission==='granted')return {k:'on',label:'Activées ✓',col:'var(--ok)'};
@@ -727,7 +734,7 @@ function pushState(){var ios=/iPhone|iPad|iPod/.test(navigator.userAgent);
 function vapidKey(){var c=null;try{c=localStorage.getItem('mfcc_vapid')}catch(e){}if(c)return Promise.resolve(c);
  return fetch(SB_URL+'/functions/v1/mfc-push?key=1').then(function(r){if(!r.ok)throw sErr('Serveur de notifications pas encore installé','notready');return r.json()}).then(function(j){if(!j.pub)throw sErr('Clé de notification manquante','server');try{localStorage.setItem('mfcc_vapid',j.pub)}catch(e){}return j.pub})}
 function u8(b){b=b.replace(/-/g,'+').replace(/_/g,'/');b+='='.repeat((4-b.length%4)%4);var r=atob(b),a=new Uint8Array(r.length);for(var i=0;i<r.length;i++)a[i]=r.charCodeAt(i);return a}
-function swReady(){return SWR?Promise.resolve(SWR):navigator.serviceWorker.register('sw.js',{scope:'./'}).then(function(r){SWR=r;return navigator.serviceWorker.ready.then(function(){return r})})}
+function swReady(){return SWR?Promise.resolve(SWR):navigator.serviceWorker.register('sw.js',{scope:'./',updateViaCache:'none'}).then(function(r){SWR=r;return navigator.serviceWorker.ready.then(function(){return r})})}
 function localAt(date,hhmm){var p=String(hhmm||'18:00').split(':');var d=new Date(date+'T00:00:00');d.setHours(+p[0]||0,+p[1]||0,0,0);return d}
 function pushItems(){var st=D.settings,r=+st.remind,out=[];var now=Date.now();
  sorted().filter(function(s){return !s.done&&!s.skipped&&s.date>=TODAY&&s.date<=add(TODAY,14)}).forEach(function(s){var t=title(s);var at,ttl;
@@ -857,7 +864,7 @@ var A={
  askDrop:function(){U.p.drop=true;render(true)},
  cDrop:function(){var id=U.ctx.id;exitClient();rpc('mfc_coach_drop',{p_id:id}).then(function(){CL.list=CL.list.filter(function(x){return x.id!==id});clSave();toast('Client retiré');render(true)}).catch(function(e){toast(e.message)})},
  invMake:function(){var I=U.inv||{};var n=(I.nom||'').trim();if(!n){toast('Indique le prénom du client');return}toast('Création du lien…');
-  rpc('mfc_coach_invite').then(function(k){var base=location.origin+location.pathname;var url=base+'?nom='+encodeURIComponent(n)+'&coach='+k+(I.prog?'&prog='+I.prog:'&client=1');var txt='Salut '+n+' ! Voici ton appli de coaching MFC 💪\n\n1. Ouvre ce lien sur ton iPhone, dans Safari :\n'+url+'\n\n2. Partager › « Sur l’écran d’accueil »\n\n3. Ouvre MFC depuis l’icône et entre ton code d’invitation : '+fmtKey(k);
+  rpc('mfc_coach_invite').then(function(k){var base='https://mfc-coaching.github.io/mfc-quiz/coaching/';var url=base+'?nom='+encodeURIComponent(n)+'&coach='+k+(I.prog?'&prog='+I.prog:'&client=1');var txt='Salut '+n+' ! Voici ton appli de coaching MFC 💪\n\n1. Ouvre ce lien sur ton iPhone, dans Safari :\n'+url+'\n\n2. Partager › « Sur l’écran d’accueil »\n\n3. Ouvre MFC depuis l’icône et entre ton code d’invitation : '+fmtKey(k);
    U.inv={};render(true);if(navigator.share)navigator.share({title:'MFC Coaching',text:txt}).catch(function(){});else copyTxt(txt)}).catch(function(e){toast(/not_coach/.test(e.message)?'Compte coach pas encore activé':e.message)})},
  coachLink:function(){var k=(($('#coachKey')||{}).value||'').trim();if(!k){toast('Colle la clé de ton coach');return}D.pendingCoach=k;persist();syncNow().then(function(){if(D.pendingCoach)linkCoach(k)});render(true)},
  bwSkip:function(){U.bwSkip=TODAY;render(true)},
