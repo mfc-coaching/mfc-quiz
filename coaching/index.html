@@ -610,7 +610,7 @@ function vPlan(){
 function sheet(){var S=U.sheet;if(!S)return '';var h='';
  if(S.t==='sess'){var s=byId(S.id);if(!s)return '';var c=col(s);var t=title(s);
   h+='<div class="col" style="gap:6px;flex:0"><div class="between">'+catPill(s)+'<span class="xs muted">'+dLong(s.date)+'</span></div><h2 style="font-size:23px">'+esc(t.t)+'</h2>'+(t.sub?'<span class="small muted">'+esc(t.sub)+'</span>':'')+'</div>';
-  h+='<div class="card" style="padding:6px 14px;gap:0;background:var(--bg2)">'+s.exercises.map(function(e){return '<div class="exl"><span>'+esc(e.name)+'</span><span class="muted" style="text-align:right">'+esc(target(e))+'</span></div>'}).join('')+'</div>';
+  h+='<div class="card" style="padding:6px 14px;gap:0;background:var(--bg2)">'+s.exercises.map(function(e){return '<div class="exl"><span>'+esc(e.name)+'</span><span class="muted" style="text-align:right">'+esc(target(e)+(e.rest&&!isTime(e)?' · repos '+restTxt(e.rest):''))+'</span></div>'}).join('')+'</div>';
   if(s.cc&&!U.ctx)h+='<div class="info">💬 <b>'+esc(coachName())+'</b> : '+esc(s.cc)+'</div>';
   h+='<button class="btn" data-a="run" data-id="'+s.id+'" style="background:'+c+'">'+ic('play',18,'#0A1128',2.4)+(U.ctx?(s.done?'Voir ce qu’il a fait · commenter':'Voir le détail'):s.done?'Voir / corriger la séance':'Démarrer la séance')+'</button>';
   if(S.mv){var mon=monday(s.date);h+='<div class="card" style="gap:10px;background:var(--bg2)"><span class="small b">Déplacer au…</span><div class="g5" style="grid-template-columns:repeat(7,1fr)">';for(var i=0;i<7;i++){var dt=add(mon,i);var on=dt===s.date;h+='<button class="chip" data-a="moveTo" data-v="'+dt+'" style="padding:0;min-height:50px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;'+(on?'border-color:'+c+';color:'+c:'')+'"><span class="xs">'+'LMMJVSD'[i]+'</span><b>'+dd(dt).getDate()+'</b></button>'}h+='</div><label class="field">Ou une autre date<input type="date" data-in="moveDate" value="'+s.date+'"></label><label class="row small" style="gap:10px"><input type="checkbox" data-in="mvAll"'+(U.p.mvAll?' checked':'')+' style="width:20px;height:20px;accent-color:#D4AF6A"> Décaler aussi les séances suivantes</label></div>'}
@@ -848,7 +848,7 @@ function fold(l){var a=Array.from(l);var out=[];while(a.length>60){out.push(a.sl
 function buildIcs(){var st=D.settings;var tm=(st.time||'18:00').replace(':','')+'00';var stamp=new Date().toISOString().replace(/[-:]/g,'').slice(0,15)+'Z';
  var L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//MFC Coaching//FR','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:MFC Coaching'];
  sorted().filter(function(s){return !s.done&&!s.skipped&&s.date>=TODAY}).forEach(function(s){var t=title(s);var m=estDur(s);
-  L.push('BEGIN:VEVENT','UID:'+s.id+'@mfc-coaching','DTSTAMP:'+stamp,'DTSTART:'+s.date.replace(/-/g,'')+'T'+tm,'DURATION:PT'+Math.max(30,m)+'M','SUMMARY:'+icsEsc('💪 '+t.t+' · MFC'),'DESCRIPTION:'+icsEsc((t.sub?t.sub+'\n':'')+s.exercises.map(function(e){return '• '+e.name+' — '+target(e)}).join('\n')+'\n\nOuvre l’appli MFC pour démarrer ta séance.'));
+  L.push('BEGIN:VEVENT','UID:'+s.id+'@mfc-coaching','DTSTAMP:'+stamp,'DTSTART:'+s.date.replace(/-/g,'')+'T'+tm,'DURATION:PT'+Math.max(30,m)+'M','SUMMARY:'+icsEsc('💪 '+t.t+' · MFC'),'DESCRIPTION:'+icsEsc((t.sub?t.sub+'\n':'')+s.exercises.map(function(e){return '• '+e.name+' — '+target(e)+(e.rest&&!isTime(e)?' · repos '+restTxt(e.rest):'')}).join('\n')+'\n\nOuvre l’appli MFC pour démarrer ta séance.'));
   var r=+st.remind;if(1){L.push('BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+icsEsc('Séance MFC : '+t.t),r===-1?'TRIGGER;VALUE=DATE-TIME:'+add(s.date,-1).replace(/-/g,'')+'T200000':r?'TRIGGER:-PT'+r+'M':'TRIGGER:PT0M','END:VALARM')}
   L.push('END:VEVENT')});
  if(isClient()){var sun=add(monday(TODAY),6);L.push('BEGIN:VEVENT','UID:bilan-hebdo@mfc-coaching','DTSTAMP:'+stamp,'DTSTART:'+sun.replace(/-/g,'')+'T180000','DURATION:PT15M','RRULE:FREQ=WEEKLY;BYDAY=SU','SUMMARY:'+icsEsc('📋 Bilan de la semaine · MFC'),'DESCRIPTION:'+icsEsc('Ouvre l’appli MFC > Bilan, et envoie-le à Mathis (2 min).'),'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:Bilan MFC','TRIGGER:PT0M','END:VALARM','END:VEVENT')}
@@ -890,7 +890,7 @@ function progRefresh(force){var P=D.program;if(!P||!P.code||!P.h||(U&&U.ctx)||!n
   importObj(o,{pc:P.code,h:h,shift:D.program.shift||0,from:TODAY});D.program.h=h;if(o&&o.program)D.program.name=PROG_NAMES[P.code]||String(o.program);save();toast('Programme mis à jour par '+coachName()+' ✅');render(true)}).catch(function(){})}
 document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')progRefresh()});
 setTimeout(function(){progRefresh(true)},1500);
-var PROG_NAMES={'road-to-350':'Road to 350 kg','nathan-b2':'Prépa concours armée — Bloc 2','elsa-test':'Programme test MFC'};
+var PROG_NAMES={'road-to-350':'Road to 350 kg','nathan-b2':'Prépa concours armée — 30/11 au 31/01','elsa-test':'Programme test MFC'};
 
 /* ---------- Minuteur de repos ---------- */
 var RT=null,ET=null,AC=null,WL=null;
