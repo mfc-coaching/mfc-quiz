@@ -451,7 +451,7 @@ function guideCard(){var ios=/iPhone|iPad|iPod/.test(navigator.userAgent);var in
  return h+'<button class="link xs" data-a="guideOff" style="align-self:flex-end;margin-top:4px">Plus tard</button></section>'}
 
 /* ---------- Bilan de fin de programme ---------- */
-var REVIEW_URL='https://www.google.com/search?q=Mathis+F%C3%A9licit%C3%A9+Coaching+avis';
+var REVIEW_URL='https://g.page/r/CRYM_PlWliinEBM/review';
 function progSess(){if(!D.program)return [];var c=D.program.code;var L=c?D.sessions.filter(function(s){return s.pc===c}):[];return L.length?L:D.sessions}
 function progEnded(){var L=progSess();return L.length>=3&&L.some(function(s){return s.done})&&!L.some(function(s){return !s.done&&!s.skipped&&s.date>=TODAY})}
 function pendKey(){return D.program?(D.program.code||D.program.name)+'|'+(D.program.h||''):''}
