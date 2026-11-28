@@ -657,7 +657,7 @@ function importObj(obj,opts){
  return out.length}
 function autoStart(o){var l=(o&&o.sessions)||[];var f=l.filter(function(s){return !s.done}).map(function(s){return s.date}).sort()[0];return f&&f<TODAY?TODAY:null}
 function fetchProg(code){return fetch('prog/'+code+'.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})}
-var PROG_NAMES={'road-to-350':'Road to 350 kg'};
+var PROG_NAMES={'road-to-350':'Road to 350 kg','nathan-b2':'Prépa concours armée — Bloc 2','elsa-test':'Programme test MFC'};
 
 /* ---------- Minuteur de repos ---------- */
 var RT=null,ET=null,AC=null,WL=null;

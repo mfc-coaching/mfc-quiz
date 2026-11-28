@@ -1,0 +1,126 @@
+{
+ "program": "Programme test MFC",
+ "sessions": [
+  {
+   "date": "2026-11-30",
+   "name": "Test · Full body A",
+   "exercises": [
+    {
+     "name": "Échauffement vélo",
+     "sets": 1,
+     "reps": 8,
+     "kg": 0,
+     "rpe": 0,
+     "rest": 0,
+     "cue": "Rythme tranquille.",
+     "unit": "min"
+    },
+    {
+     "name": "Goblet squat",
+     "sets": 3,
+     "reps": 12,
+     "kg": 10,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Descends sous la parallèle, dos droit."
+    },
+    {
+     "name": "Rowing haltère",
+     "sets": 3,
+     "reps": 10,
+     "kg": 8,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Par bras. Tire le coude vers la hanche."
+    },
+    {
+     "name": "Pompes sur genoux",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 7,
+     "rest": 60,
+     "cue": "Gainage serré tout le long."
+    },
+    {
+     "name": "Gainage",
+     "sets": 3,
+     "reps": 30,
+     "kg": 0,
+     "rpe": 0,
+     "rest": 45,
+     "cue": "",
+     "unit": "sec"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "name": "Test · Cardio",
+   "exercises": [
+    {
+     "name": "Footing ou marche rapide",
+     "sets": 1,
+     "reps": 25,
+     "kg": 0,
+     "rpe": 0,
+     "rest": 0,
+     "cue": "Tu dois pouvoir parler en courant.",
+     "unit": "min"
+    },
+    {
+     "name": "Fentes alternées",
+     "sets": 3,
+     "reps": 10,
+     "kg": 0,
+     "rpe": 6,
+     "rest": 60,
+     "cue": "10 par jambe."
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "name": "Test · Full body B",
+   "exercises": [
+    {
+     "name": "Hip thrust",
+     "sets": 3,
+     "reps": 12,
+     "kg": 20,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Serre les fessiers 1 sec en haut."
+    },
+    {
+     "name": "Tirage vertical",
+     "sets": 3,
+     "reps": 12,
+     "kg": 25,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Tire vers le haut de la poitrine."
+    },
+    {
+     "name": "Développé haltères",
+     "sets": 3,
+     "reps": 10,
+     "kg": 8,
+     "rpe": 7,
+     "rest": 90,
+     "cue": "Par haltère."
+    },
+    {
+     "name": "Planche latérale",
+     "sets": 2,
+     "reps": 25,
+     "kg": 0,
+     "rpe": 0,
+     "rest": 45,
+     "cue": "Par côté.",
+     "unit": "sec"
+    }
+   ]
+  }
+ ]
+}
